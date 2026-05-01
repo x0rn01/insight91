@@ -90,6 +90,41 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
         .i91-hero > .container { padding-top: 5rem; padding-bottom: 3rem; }
       }
 
+      /* Modern CTA button — gradient, glow, subtle hover lift, arrow nudge */
+      .i91-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: .6rem;
+        padding: 1rem 2.25rem;
+        font-size: 1.05rem;
+        font-weight: 600;
+        line-height: 1;
+        color: #fff !important;
+        background: var(--bs-primary);
+        background-image: linear-gradient(135deg, var(--bs-primary) 0%, rgba(0,0,0,.18) 100%);
+        border: none;
+        border-radius: 999px;
+        box-shadow:
+          0 12px 28px -6px rgba(var(--bs-primary-rgb), .55),
+          0 4px 12px rgba(15,18,24,.10);
+        text-decoration: none;
+        transition: transform .25s ease, box-shadow .25s ease, gap .25s ease;
+      }
+      .i91-cta:hover {
+        transform: translateY(-2px);
+        gap: .9rem;
+        box-shadow:
+          0 16px 36px -6px rgba(var(--bs-primary-rgb), .65),
+          0 6px 16px rgba(15,18,24,.14);
+        color: #fff;
+      }
+      .i91-cta:active {
+        transform: translateY(0);
+      }
+      .i91-cta i { font-size: 1.15rem; line-height: 1; }
+      .i91-cta-block { display: flex; width: 100%; }   /* full-width variant */
+
       /* Header logo — cap height (logo SVG was tightly cropped, default sizing was too large) */
       .navbar .logo-header {
         max-height: 72px !important;

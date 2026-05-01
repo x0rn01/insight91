@@ -9,27 +9,8 @@ include(__DIR__ . '/../shared/head.php');
   <div class="content-wrapper">
 
     <?php
-    function isMobileDevice() {
-        $userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
-        // Common keywords for popular mobile devices
-        return strpos($userAgent, 'mobile') !== false ||
-               strpos($userAgent, 'android') !== false ||
-               strpos($userAgent, 'iphone') !== false ||
-               strpos($userAgent, 'ipod') !== false ||
-               strpos($userAgent, 'ipad') !== false ||
-               strpos($userAgent, 'windows phone') !== false;
-    }
-
-    // Default values for desktop
     $navbar = 'navbar-light';
     $logo = 'logo-dark';
-
-    // Check if the device is mobile
-    if (isMobileDevice()) {
-        $navbar = 'navbar-dark';
-        $logo = 'logo-light';
-    }
-
     include(__DIR__ . '/../shared/header.php');
     ?>
 
@@ -42,7 +23,7 @@ include(__DIR__ . '/../shared/head.php');
             <div class="mt-lg-n10 ps-lg-0 pe-lg-13 text-lg-start" data-cues="slideInDown" data-group="page-title" data-delay="600">
               <h1 class="display-1 mb-5">Vos données, votre ERP, votre IA — pilotés ensemble</h1>
               <p class="lead fs-25 lh-sm mb-7 pe-md-10">Insight 91 accompagne PME et grandes organisations sur trois axes complémentaires : la donnée, la gestion ERP et l'intelligence artificielle appliquée au métier.</p>
-              <a href="/fr/contact" class="btn btn-lg btn-primary rounded-pill">Contactez-nous</a>
+              <a href="/fr/contact" class="i91-cta">Contactez-nous <i class="uil uil-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -58,7 +39,7 @@ include(__DIR__ . '/../shared/head.php');
           <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Partenaire Odoo officiel pour les PME.</span></li>
           <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Expertise éprouvée auprès de grands groupes (Ethias, Securex, Rolls Royce).</span></li>
         </ul>
-        <a href="/fr/contact" class="btn btn-lg btn-primary rounded-pill w-100">Contactez-nous</a>
+        <a href="/fr/contact" class="i91-cta i91-cta-block">Contactez-nous <i class="uil uil-arrow-right"></i></a>
       </div>
     </section>
     <section id="snippet-1" class="wrapper bg-light">
