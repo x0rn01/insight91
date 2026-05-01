@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+  <url>
+    <loc>https://insight91.be/en/</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/"/>
+  </url>
+
+  <url>
+    <loc>https://insight91.be/en/sport</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/sport"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/sport"/>
+  </url>
+
+  <url>
+    <loc>https://insight91.be/en/business</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/business"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/business"/>
+  </url>
+
+  <url>
+    <loc>https://insight91.be/en/qlik</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/qlik"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/qlik"/>
+  </url>
+
+  <url>
+    <loc>https://insight91.be/en/powerbi</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/powerbi"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/powerbi"/>
+  </url>
+
+  <url>
+    <loc>https://insight91.be/fr/</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/"/>
+  </url>
+
+  <url>
+    <loc>https://insight91.be/fr/sport</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>0.64</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/sport"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/sport"/>
+  </url>
+
+  <url>
+    <loc>https://insight91.be/fr/business</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>0.64</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/business"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/business"/>
+  </url>
+
+  <url>
+    <loc>https://insight91.be/fr/qlik</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>0.64</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/qlik"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/qlik"/>
+  </url>
+
+  <url>
+    <loc>https://insight91.be/fr/powerbi</loc>
+    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
+    <priority>0.64</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/powerbi"/>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/powerbi"/>
+  </url>
+
+</urlset>

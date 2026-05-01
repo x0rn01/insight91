@@ -1,0 +1,28 @@
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect /en/index.php and /fr/index.php to /en/ and /fr/
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(en|fr)/index\.php\s [NC]
+RewriteRule ^ /%1/ [R=301,L]
+
+# Redirect to hide .php extension
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(en|fr)/([^/]+)\.php\s [NC]
+RewriteRule ^ /%1/%2 [R=301,L]
+
+# Rewrite to add .php to internally process as PHP files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1\.php -f
+RewriteRule ^(en|fr)/([^/]+)/?$ /$1/$2.php [L]
+
+# Redirect non-existent files or directories to index.php (for routing)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(en|fr)/(.+)$ /$1/index.php [L]
+
+# Redirect root domain to default language (French)
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /fr/ [R=301,L]

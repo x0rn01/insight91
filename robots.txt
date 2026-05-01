@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /scripts/
+Allow: /favicon/
+Allow: /en/
+Allow: /fr/
+Sitemap: https://www.insight91.be/sitemap.xml
