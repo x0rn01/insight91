@@ -78,6 +78,8 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
       /* Header logo — cap height (logo SVG was tightly cropped, default sizing was too large) */
       .navbar .logo-header {
         max-height: 72px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
         max-width: none !important;
         width: auto !important;
         height: auto;
