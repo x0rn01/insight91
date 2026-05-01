@@ -2,7 +2,7 @@
 title: "Bienvenue sur le blog d'Insight 91"
 date: 2026-04-15
 excerpt: "Cas concrets, retours d'expérience et actualités data, ERP et IA : ce blog est pensé comme un partage régulier autour de nos missions."
-cover: "/assets/img/photos/business1.jpg"
+cover: "/assets/img/photos/business1.webp"
 tags: [actualités, insight91]
 ---
 

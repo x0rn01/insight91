@@ -2,7 +2,7 @@
 title: "Welcome to the Insight 91 blog"
 date: 2026-04-15
 excerpt: "Concrete cases, lessons learned and news on data, ERP and AI: this blog is built as a regular share from our missions."
-cover: "/assets/img/photos/business1.jpg"
+cover: "/assets/img/photos/business1.webp"
 tags: [news, insight91]
 ---
 

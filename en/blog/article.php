@@ -43,7 +43,7 @@ include(__DIR__ . '/../../shared/head.php');
   <div class="content-wrapper">
     <?php $navbar = 'navbar-dark'; $logo = 'logo-light'; include(__DIR__ . '/../../shared/header.php'); ?>
 
-    <section class="wrapper image-wrapper bg-cover bg-image bg-dark" data-image-src="<?php echo !empty($post['cover']) ? htmlspecialchars($post['cover']) : '/assets/img/photos/business.avif'; ?>">
+    <section class="wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong" data-image-src="<?php echo !empty($post['cover']) ? htmlspecialchars($post['cover']) : '/assets/img/photos/business.avif'; ?>">
       <div class="container pt-17 pb-15 py-sm-17 py-xxl-20">
         <div class="row">
           <div class="col-md-10 col-lg-9 col-xl-8 mx-auto text-center" data-cues="slideInDown" data-group="page-title" data-delay="500">

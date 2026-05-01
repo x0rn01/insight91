@@ -8,7 +8,7 @@ $year = date('Y');
         <div class="row gy-6 gy-lg-0">
             <div class="col-md-4 col-lg-3">
                 <div class="widget">
-                    <img class="mb-4" src="/assets/img/logo-light.svg" alt="Insight 91" style="height:36px;" />
+                    <img class="mb-4" src="/assets/img/logo-light.svg" alt="Insight 91" style="height:84px;" />
                     <p class="mb-4"><?php echo $T(
                         'Partenaire data, ERP et IA pour PME et grandes organisations.',
                         'Data, ERP and AI partner for SMBs and larger organizations.'
@@ -37,7 +37,6 @@ $year = date('Y');
                     <h4 class="widget-title text-white mb-3 mt-5"><?php echo $T('Plus', 'More'); ?></h4>
                     <ul class="list-unstyled mb-0">
                         <li><a href="/<?php echo $L; ?>/blog">Blog</a></li>
-                        <li><a href="/<?php echo $L; ?>/about"><?php echo $T('Qui sommes-nous', 'About'); ?></a></li>
                     </ul>
                 </div>
             </div>

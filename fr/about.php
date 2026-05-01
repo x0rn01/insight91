@@ -13,7 +13,7 @@ include(__DIR__ . '/../shared/head.php');
         include(__DIR__ . '/../shared/header.php');
     ?>
 
-    <section class="wrapper image-wrapper bg-cover bg-image bg-dark" data-image-src="/assets/img/photos/business.avif">
+    <section class="wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong" data-image-src="/assets/img/photos/business.avif">
       <div class="container pt-17 pb-15 py-sm-17 py-xxl-20">
         <div class="row">
           <div class="col-md-9 col-lg-8 col-xl-7 text-center text-md-start" data-cues="slideInDown" data-group="page-title" data-delay="500">
@@ -74,7 +74,6 @@ include(__DIR__ . '/../shared/head.php');
       <div class="container py-14 py-md-16">
         <h2 class="fs-16 text-uppercase text-muted mb-3 text-center">L'équipe</h2>
         <h3 class="display-5 mb-10 text-center">Les fondateurs</h3>
-        <p class="lead text-center text-muted mb-10">Cette section sera complétée avec les portraits et bios des fondateurs.</p>
 
         <div class="row gx-md-8 gx-xl-12 gy-8 justify-content-center">
           <div class="col-md-6 col-lg-4">
@@ -86,7 +85,6 @@ include(__DIR__ . '/../shared/head.php');
                 </div>
                 <h4 class="mb-1">Fondateur 1</h4>
                 <p class="text-muted mb-3">Co-fondateur</p>
-                <p class="mb-0 fs-15">Bio à venir.</p>
               </div>
             </div>
           </div>
@@ -98,7 +96,6 @@ include(__DIR__ . '/../shared/head.php');
                 </div>
                 <h4 class="mb-1">Fondateur 2</h4>
                 <p class="text-muted mb-3">Co-fondateur</p>
-                <p class="mb-0 fs-15">Bio à venir.</p>
               </div>
             </div>
           </div>

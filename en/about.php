@@ -9,7 +9,7 @@ include(__DIR__ . '/../shared/head.php');
   <div class="content-wrapper">
     <?php $navbar = 'navbar-dark'; $logo = 'logo-light'; include(__DIR__ . '/../shared/header.php'); ?>
 
-    <section class="wrapper image-wrapper bg-cover bg-image bg-dark" data-image-src="/assets/img/photos/business.avif">
+    <section class="wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong" data-image-src="/assets/img/photos/business.avif">
       <div class="container pt-17 pb-15 py-sm-17 py-xxl-20">
         <div class="row">
           <div class="col-md-9 col-lg-8 col-xl-7 text-center text-md-start" data-cues="slideInDown" data-group="page-title" data-delay="500">
@@ -50,17 +50,14 @@ include(__DIR__ . '/../shared/head.php');
       <div class="container py-14 py-md-16">
         <h2 class="fs-16 text-uppercase text-muted mb-3 text-center">The team</h2>
         <h3 class="display-5 mb-10 text-center">The founders</h3>
-        <p class="lead text-center text-muted mb-10">Founder portraits and bios coming soon.</p>
 
         <div class="row gx-md-8 gx-xl-12 gy-8 justify-content-center">
           <div class="col-md-6 col-lg-4"><div class="card border-0 shadow-lg h-100"><div class="card-body p-7 text-center">
             <div class="rounded-circle bg-soft-primary mx-auto mb-4 d-flex align-items-center justify-content-center" style="width: 150px; height: 150px;"><i class="uil uil-user text-primary" style="font-size: 80px;"></i></div>
-            <h4 class="mb-1">Founder 1</h4><p class="text-muted mb-3">Co-founder</p><p class="mb-0 fs-15">Bio coming soon.</p>
-          </div></div></div>
+            <h4 class="mb-1">Founder 1</h4><p class="text-muted mb-3">Co-founder</p>          </div></div></div>
           <div class="col-md-6 col-lg-4"><div class="card border-0 shadow-lg h-100"><div class="card-body p-7 text-center">
             <div class="rounded-circle bg-soft-primary mx-auto mb-4 d-flex align-items-center justify-content-center" style="width: 150px; height: 150px;"><i class="uil uil-user text-primary" style="font-size: 80px;"></i></div>
-            <h4 class="mb-1">Founder 2</h4><p class="text-muted mb-3">Co-founder</p><p class="mb-0 fs-15">Bio coming soon.</p>
-          </div></div></div>
+            <h4 class="mb-1">Founder 2</h4><p class="text-muted mb-3">Co-founder</p>          </div></div></div>
         </div>
       </div>
     </section>

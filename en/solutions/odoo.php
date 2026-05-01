@@ -22,15 +22,12 @@ include(__DIR__ . '/../../shared/head.php');
 
     <section class="wrapper bg-light">
       <div class="container py-15 py-md-17 position-relative">
-        <figure class="rounded mt-n21 mt-lg-n23 mb-16 mb-md-18 position-relative bg-soft-primary p-10 text-center" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
-          <div>
-            <i class="uil uil-play-circle text-primary" style="font-size: 100px;"></i>
-            <p class="mt-3 mb-0 text-muted">Odoo demo video (placeholder)</p>
-          </div>
+        <figure class="rounded mt-n21 mt-lg-n23 mb-16 mb-md-18 position-relative" data-cues="fadeIn" data-delay="250" style="aspect-ratio: 16/9;">
+          <iframe class="w-100 h-100 rounded d-block" src="https://www.youtube.com/embed/nbso3NVz3p8" title="Odoo demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </figure>
 
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-          <div class="col-lg-6 order-lg-2"><figure class="rounded mb-0"><img src="/assets/img/photos/business1.jpg" alt="Odoo in action"></figure></div>
+          <div class="col-lg-6 order-lg-2"><figure class="rounded mb-0"><img src="/assets/img/photos/business1.webp" alt="Odoo in action"></figure></div>
           <div class="col-lg-6">
             <h2 class="display-4 mb-4">One platform, every business area</h2>
             <p class="mb-5">Odoo is a modular ERP suite covering an SMB's full needs: sales, accounting, inventory, HR, e-commerce, manufacturing. You activate what you need, when you need it.</p>
@@ -76,10 +73,9 @@ include(__DIR__ . '/../../shared/head.php');
             <h2 class="fs-16 text-uppercase text-muted mb-3">Stories</h2>
             <h3 class="display-5 mb-5">They chose <span class="underline-3 style-2 yellow">Odoo</span> with us</h3>
             <p class="lead fs-lg mb-3">Butchery, ironwork, snacks, guesthouses, multi-sector SMBs — our clients find in Odoo a tool that adapts to their business, not the other way around.</p>
-            <p class="text-muted fs-14">Customer stories coming soon — agreements pending.</p>
             <a href="/en/services/erp" class="btn btn-primary rounded-pill mt-3">Learn about our approach</a>
           </div>
-          <div class="col-lg-6"><figure class="rounded"><img src="/assets/img/photos/business5.png" alt="Odoo SMB" /></figure></div>
+          <div class="col-lg-6"><figure class="rounded"><img src="/assets/img/photos/business5.webp" alt="Odoo SMB" /></figure></div>
         </div>
       </div>
     </section>

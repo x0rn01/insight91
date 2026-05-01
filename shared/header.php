@@ -59,9 +59,6 @@ $contact = "/$L/contact";
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo $blog; ?>">Blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $about; ?>"><?php echo $T('Qui sommes-nous', 'About'); ?></a>
-                        </li>
                     </ul>
 
                     <!-- Offcanvas Footer (Mobile) -->

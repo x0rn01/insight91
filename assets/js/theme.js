@@ -81,7 +81,7 @@ var theme = {
           this.clonedElem.className = this.clonedElem.className.replace("navbar-dark","navbar-light");
         }
         // Update the logo to dark version when navbar becomes sticky
-        document.getElementById('logoImage').src = '../assets/img/logo-dark.svg';
+        document.getElementById('logoImage').src = '/assets/img/logo-dark.svg';
       },
     };
     var banner = new Headhesive('.navbar', options);

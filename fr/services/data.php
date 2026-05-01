@@ -13,7 +13,7 @@ include(__DIR__ . '/../../shared/head.php');
         include(__DIR__ . '/../../shared/header.php');
     ?>
 
-    <section class="wrapper image-wrapper bg-cover bg-image bg-dark" data-image-src="/assets/img/photos/business.avif">
+    <section class="wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong" data-image-src="/assets/img/photos/business.avif">
       <div class="container pt-17 pb-15 py-sm-17 py-xxl-20">
         <div class="row">
           <div class="col-md-9 col-lg-8 col-xl-7 text-center text-md-start" data-cues="slideInDown" data-group="page-title" data-delay="500">
@@ -76,7 +76,7 @@ include(__DIR__ . '/../../shared/head.php');
 
         <h2 class="fs-16 text-uppercase text-muted mb-3 text-center">Domaines d'expertise</h2>
         <h3 class="display-5 mb-10 text-center">Une stack moderne, des fondations solides</h3>
-        <div class="row gx-lg-8 gx-xl-12 gy-6 mb-14">
+        <div class="row gx-lg-8 gx-xl-12 gy-6">
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div><i class="uil uil-database text-primary fs-30 me-3"></i></div>
@@ -150,7 +150,7 @@ include(__DIR__ . '/../../shared/head.php');
             </ul>
           </div>
           <div class="col-lg-6 position-relative">
-            <figure class="rounded"><img src="/assets/img/photos/customer-1.jpg" alt="Cas concrets data" /></figure>
+            <figure class="rounded"><img src="/assets/img/photos/data-screen.webp" alt="Cas concrets data" /></figure>
           </div>
         </div>
       </div>

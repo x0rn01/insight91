@@ -26,17 +26,13 @@ include(__DIR__ . '/../../shared/head.php');
 
     <section class="wrapper bg-light">
       <div class="container py-15 py-md-17 position-relative">
-        <!-- Placeholder vidéo de démo Odoo -->
-        <figure class="rounded mt-n21 mt-lg-n23 mb-16 mb-md-18 position-relative bg-soft-primary p-10 text-center" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
-          <div>
-            <i class="uil uil-play-circle text-primary" style="font-size: 100px;"></i>
-            <p class="mt-3 mb-0 text-muted">Vidéo de démonstration Odoo (placeholder)</p>
-          </div>
+        <figure class="rounded mt-n21 mt-lg-n23 mb-16 mb-md-18 position-relative" data-cues="fadeIn" data-delay="250" style="aspect-ratio: 16/9;">
+          <iframe class="w-100 h-100 rounded d-block" src="https://www.youtube.com/embed/nbso3NVz3p8" title="Démonstration Odoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </figure>
 
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div class="col-lg-6 order-lg-2">
-            <figure class="rounded mb-0"><img src="/assets/img/photos/business1.jpg" alt="Odoo en action"></figure>
+            <figure class="rounded mb-0"><img src="/assets/img/photos/business1.webp" alt="Odoo en action"></figure>
           </div>
           <div class="col-lg-6">
             <h2 class="display-4 mb-4">Une plateforme, tous vos métiers</h2>
@@ -131,11 +127,10 @@ include(__DIR__ . '/../../shared/head.php');
             <h2 class="fs-16 text-uppercase text-muted mb-3">Témoignages</h2>
             <h3 class="display-5 mb-5">Ils ont choisi <span class="underline-3 style-2 yellow">Odoo</span> avec nous</h3>
             <p class="lead fs-lg mb-3">Boucherie, ferronnerie, snacks, tables d'hôtes, PME multi-secteurs : nos clients trouvent dans Odoo un outil qui s'adapte à leur métier — pas l'inverse.</p>
-            <p class="text-muted fs-14">Témoignages clients à venir — accord en cours.</p>
             <a href="/fr/services/erp" class="btn btn-primary rounded-pill mt-3">En savoir plus sur notre approche</a>
           </div>
           <div class="col-lg-6">
-            <figure class="rounded"><img src="/assets/img/photos/business5.png" alt="Odoo PME" /></figure>
+            <figure class="rounded"><img src="/assets/img/photos/business5.webp" alt="Odoo PME" /></figure>
           </div>
         </div>
       </div>

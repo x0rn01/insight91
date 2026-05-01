@@ -38,7 +38,7 @@ include(__DIR__ . '/../../shared/head.php');
           <div class="col-lg-6 order-lg-2 position-relative">
             <div class="shape bg-line aqua rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; left: -0.6rem;"></div>
             <div class="shape bg-pale-red rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; right: -0.4rem;"></div>
-            <figure class="rounded mb-0"><img src="/assets/img/photos/qlik-sense.jpg" alt=""></figure>
+            <figure class="rounded mb-0"><img src="/assets/img/photos/qlik-sense.webp" alt=""></figure>
           </div>
           <!--/column -->
           <div class="col-lg-6">
@@ -84,11 +84,11 @@ include(__DIR__ . '/../../shared/head.php');
           <div class="col-lg-4">
             <div class="row mb-10">
               <div class="col-6 col-lg-5" data-cues="zoomIn" data-group="col-start" data-delay="300">
-                <div class="ms-auto mt-auto"><img class="img-fluid" src="/assets/img/photos/qlick1.png" alt="" /></div>
+                <div class="ms-auto mt-auto"><img class="img-fluid" src="/assets/img/photos/qlick1.webp" alt="" /></div>
               </div>
               <!-- /column -->
               <div class="col-6 col-lg-5 uil-vertical-align-center" data-cue="zoomIn">
-                <div><img class="w-100 img-fluid" src="/assets/img/photos/qlick2.png" alt="" /></div>
+                <div><img class="w-100 img-fluid" src="/assets/img/photos/qlick2.webp" alt="" /></div>
               </div>
               <!-- /column -->
             </div>
