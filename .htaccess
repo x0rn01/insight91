@@ -7,25 +7,39 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Sport pages permanently removed — return 410 Gone for fast Google deindexing
 RewriteRule ^(en|fr)/sport(\.php)?/?$ - [G,L]
 
+# 301 redirects: old flat URLs → new nested URLs
+RewriteRule ^(en|fr)/qlik(\.php)?/?$ /$1/solutions/qlik [R=301,L]
+RewriteRule ^(en|fr)/powerbi(\.php)?/?$ /$1/solutions/powerbi [R=301,L]
+RewriteRule ^(en|fr)/business(\.php)?/?$ /$1/services/data [R=301,L]
+
 # Redirect /en/index.php and /fr/index.php to /en/ and /fr/
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(en|fr)/index\.php\s [NC]
 RewriteRule ^ /%1/ [R=301,L]
 
-# Redirect to hide .php extension
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(en|fr)/([^/]+)\.php\s [NC]
+# Hide .php extension on direct URLs (single-level and nested)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(en|fr)/(.+)\.php\s [NC]
 RewriteRule ^ /%1/%2 [R=301,L]
 
-# Rewrite to add .php to internally process as PHP files
+# Blog article slugs: /(en|fr)/blog/<slug> → /(en|fr)/blog/article.php?slug=<slug>
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{DOCUMENT_ROOT}/$1\.php -f
+RewriteRule ^(en|fr)/blog/([a-z0-9-]+)/?$ /$1/blog/article.php?slug=$2 [L,QSA]
+
+# Internal: /(en|fr)/foo/bar → /(en|fr)/foo/bar.php (nested, e.g. services/data)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1/$2/$3.php -f
+RewriteRule ^(en|fr)/([^/]+)/([^/]+)/?$ /$1/$2/$3.php [L]
+
+# Internal: /(en|fr)/foo → /(en|fr)/foo.php (single level)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1/$2.php -f
 RewriteRule ^(en|fr)/([^/]+)/?$ /$1/$2.php [L]
 
-# Redirect non-existent files or directories to index.php (for routing)
+# Catch-all: missing files inside a language → /<lang>/index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(en|fr)/(.+)$ /$1/index.php [L]
 
-# Redirect root domain to default language (French)
-RewriteEngine On
+# Redirect root to default language (French)
 RewriteCond %{REQUEST_URI} ^/$
 RewriteRule ^$ /fr/ [R=301,L]

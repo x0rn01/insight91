@@ -34,18 +34,18 @@ include(__DIR__ . '/../shared/head.php');
     ?>
 
     <section class="wrapper bg-light position-relative min-vh-70 d-lg-flex align-items-center mt-lg-20">
-      <div class="rounded-4-lg-start col-lg-6 order-lg-2 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100 min-vh-40" data-image-src="./../assets/img/photos/main.jpg">
+      <div class="rounded-4-lg-start col-lg-6 order-lg-2 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100 min-vh-40" data-image-src="/assets/img/photos/main.jpg">
       </div>
       <!--/column -->
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <div class="mt-10 mt-md-11 mt-lg-n10 px-10 px-md-11 ps-lg-0 pe-lg-13 text-center text-lg-start " data-cues="slideInDown" data-group="page-title" data-delay="600">
-              <h1 id="subtitle" class="display-1 mb-5">From Insights to Impact.</h1>
-              <p id="tagline" class="lead fs-25 lh-sm mb-7 pe-md-10">Elevate your Business with Smart Analytics.</p>
+              <h1 id="subtitle" class="display-1 mb-5">Your data, your ERP, your AI — steered together</h1>
+              <p id="tagline" class="lead fs-25 lh-sm mb-7 pe-md-10">Insight 91 supports SMBs and larger organizations on three complementary axes: data, ERP and applied AI.</p>
               <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-                <span><a id="explore_now_button" href="#snippet-1" class="btn btn-lg btn-primary rounded-pill me-2 scroll">Explore Now</a></span>
-                <span><button id="contact_us_button" data-target="section-contact" class="btn btn-lg btn-outline-primary rounded-pill scroll scroll-button">Contact Us</button></span>
+                <span><a href="#snippet-1" class="btn btn-lg btn-primary rounded-pill me-2 scroll">Explore Now</a></span>
+                <span><a href="/en/contact" class="btn btn-lg btn-outline-primary rounded-pill">Contact Us</a></span>
               </div>
             </div>
             <!--/div -->
@@ -69,11 +69,11 @@ include(__DIR__ . '/../shared/head.php');
               <div class="col-md-6">
                 <div class="row gx-md-5 gy-5">
                   <div class="col-md-10 offset-md-2">
-                    <figure class="rounded"><img src="./../assets/img/photos/crop-1.jpg" alt="BI"></figure>
+                    <figure class="rounded"><img src="/assets/img/photos/crop-1.jpg" alt="BI"></figure>
                   </div>
                   <!--/column -->
                   <div class="col-md-12">
-                    <figure class="rounded"><img src="./../assets/img/photos/crop-2.webp" alt="BI"></figure>
+                    <figure class="rounded"><img src="/assets/img/photos/crop-2.webp" alt="BI"></figure>
                   </div>
                   <!--/column -->
                 </div>
@@ -81,7 +81,7 @@ include(__DIR__ . '/../shared/head.php');
               </div>
               <!--/column -->
               <div class="col-md-6">
-                <figure class="rounded"><img src="./../assets/img/photos/crop-3.webp"  alt="BI"></figure>
+                <figure class="rounded"><img src="/assets/img/photos/crop-3.webp"  alt="BI"></figure>
               </div>
               <!--/column -->
             </div>
@@ -102,7 +102,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/design.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/design.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="customized_solutions" class="mb-1">Customized Solutions</h4>
@@ -114,7 +114,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/cloud-computing.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/cloud-computing.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="data_integration" class="mb-1">Data Integration</h4>
@@ -126,7 +126,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/bar-chart.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/bar-chart.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="advanced_analytics" class="mb-1">Advanced Analytics</h4>
@@ -138,7 +138,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/headphone.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/headphone.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="training_support" class="mb-1">Training and Support</h4>
@@ -150,7 +150,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/laptop.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/laptop.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="user_friendly_interfaces" class="mb-1">User-Friendly Interfaces</h4>
@@ -162,7 +162,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/secure.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/secure.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="data_security" class="mb-1">Data Security</h4>
@@ -178,19 +178,19 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-lg-7 order-lg-2">
             <div class="row gx-md-5 gy-5">
               <div class="col-md-4 offset-md-2 align-self-end hide-sm">
-                <figure class="rounded"><img src="./../assets/img/photos/home1.jpg" alt=""></figure>
+                <figure class="rounded"><img src="/assets/img/photos/home1.jpg" alt=""></figure>
               </div>
               <!--/column -->
               <div class="col-md-6 align-self-end hide-sm">
-                <figure class="rounded"><img src="./../assets/img/photos/home2.jpg" alt=""></figure>
+                <figure class="rounded"><img src="/assets/img/photos/home2.jpg" alt=""></figure>
               </div>
               <!--/column -->
               <div class="col-md-6 offset-md-1">
-                <figure class="rounded hide-sm"><img src="./../assets/img/photos/home3.jpg" alt=""></figure>
+                <figure class="rounded hide-sm"><img src="/assets/img/photos/home3.jpg" alt=""></figure>
               </div>
               <!--/column -->
               <div class="col-md-4 align-self-start">
-                <figure class="rounded"><img src="./../assets/img/photos/home4.jpg" alt=""></figure>
+                <figure class="rounded"><img src="/assets/img/photos/home4.jpg" alt=""></figure>
               </div>
               <!--/column -->
             </div>
@@ -252,18 +252,49 @@ include(__DIR__ . '/../shared/head.php');
       <!-- /.container -->
     </section>
     <!-- /section -->
-    <section class="wrapper image-wrapper bg-image bg-overlay" data-image-src="./../assets/img/photos/home-banner.jpg">
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <h2 class="fs-16 text-uppercase text-muted mb-3 text-center">Our services</h2>
+        <h3 class="display-4 mb-10 text-center">Three areas of expertise</h3>
+        <div class="row gx-md-8 gx-xl-12 gy-8">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg h-100"><div class="card-body p-7">
+              <i class="uil uil-database text-primary fs-50 mb-3"></i>
+              <h4>Data</h4>
+              <p class="mb-4">Warehouse, ETL, dashboarding, data quality. Hands-on experience with large groups.</p>
+              <a href="/en/services/data" class="more hover">Discover →</a>
+            </div></div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg h-100"><div class="card-body p-7">
+              <i class="uil uil-suitcase text-primary fs-50 mb-3"></i>
+              <h4>ERP <span class="badge bg-pale-primary text-primary rounded-pill ms-2 fs-12">Odoo Partner</span></h4>
+              <p class="mb-4">Odoo implementation and support for SMBs — from diagnosis to post go-live.</p>
+              <a href="/en/services/erp" class="more hover">Discover →</a>
+            </div></div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg h-100"><div class="card-body p-7">
+              <i class="uil uil-brain text-primary fs-50 mb-3"></i>
+              <h4>AI</h4>
+              <p class="mb-4">AI applied to business: public tenders, administrative management, automation.</p>
+              <a href="/en/services/ia" class="more hover">Discover →</a>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper image-wrapper bg-image bg-overlay" data-image-src="/assets/img/photos/home-banner.jpg">
       <div class="container py-18 text-center">
         <div class="row">
           <div class="col-lg-10 col-xl-10 col-xxl-8 mx-auto">
-            <h2 id="discover_bi_expertise" class="display-4 px-lg-10 px-xl-13 px-xxl-10 text-white pb-10">Discover how our Business Intelligence expertise can elevate your sector to new heights of performance and insight</h2>
-            <span><a id="business_button" href="business.php" class="btn btn-lg btn-white rounded-pill">Business</a></span>
+            <h2 class="display-4 px-lg-10 px-xl-13 px-xxl-10 text-white pb-10">Our partner solutions</h2>
+            <span><a href="/en/solutions/odoo" class="btn btn-lg btn-white rounded-pill me-2 mb-2">Odoo</a></span>
+            <span><a href="/en/solutions/qlik" class="btn btn-lg btn-white rounded-pill me-2 mb-2">Qlik Sense</a></span>
+            <span><a href="/en/solutions/powerbi" class="btn btn-lg btn-white rounded-pill mb-2">Power BI</a></span>
           </div>
-          <!--/column -->
         </div>
-        <!--/.row -->
       </div>
-      <!-- /.container -->
     </section>
     <!-- /section -->
 
@@ -278,8 +309,8 @@ include(__DIR__ . '/../shared/head.php');
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-  <script src="./../assets/js/plugins.js"></script>
-  <script src="./../assets/js/theme.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/theme.js"></script>
 
 </body>
 

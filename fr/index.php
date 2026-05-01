@@ -34,18 +34,18 @@ include(__DIR__ . '/../shared/head.php');
     ?>
 
     <section class="wrapper bg-light position-relative min-vh-70 d-lg-flex align-items-center mt-lg-20">
-      <div class="rounded-4-lg-start col-lg-6 order-lg-2 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100 min-vh-40" data-image-src="./../assets/img/photos/main.jpg">
+      <div class="rounded-4-lg-start col-lg-6 order-lg-2 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100 min-vh-40" data-image-src="/assets/img/photos/main.jpg">
       </div>
       <!--/column -->
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <div class="mt-10 mt-md-11 mt-lg-n10 px-10 px-md-11 ps-lg-0 pe-lg-13 text-center text-lg-start " data-cues="slideInDown" data-group="page-title" data-delay="600">
-              <h1 id="subtitle" class="display-1 mb-5">Changez vos données en résultats concrets</h1>
-              <p id="tagline" class="lead fs-25 lh-sm mb-7 pe-md-10">Votre futur, illuminé par nos analyses. Utilisez l'information pour surpasser vos concurrents grâce à notre expertise.</p>
+              <h1 id="subtitle" class="display-1 mb-5">Vos données, votre ERP, votre IA — pilotés ensemble</h1>
+              <p id="tagline" class="lead fs-25 lh-sm mb-7 pe-md-10">Insight 91 accompagne PME et grandes organisations sur trois axes complémentaires : la donnée, la gestion ERP et l'intelligence artificielle appliquée au métier.</p>
               <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-                <span><a id="explore_now_button" href="#snippet-1" class="btn btn-lg btn-primary rounded-pill me-2 scroll">En savoir plus</a></span>
-                  <span><button id="contact_us_button" data-target="section-contact" class="btn btn-lg btn-outline-primary rounded-pill scroll scroll-button">Contactez nous</button></span>
+                <span><a href="#snippet-1" class="btn btn-lg btn-primary rounded-pill me-2 scroll">En savoir plus</a></span>
+                <span><a href="/fr/contact" class="btn btn-lg btn-outline-primary rounded-pill">Contactez-nous</a></span>
               </div>
             </div>
             <!--/div -->
@@ -69,11 +69,11 @@ include(__DIR__ . '/../shared/head.php');
               <div class="col-md-6">
                 <div class="row gx-md-5 gy-5">
                   <div class="col-md-10 offset-md-2">
-                    <figure class="rounded"><img src="./../assets/img/photos/crop-1.jpg" alt="BI"></figure>
+                    <figure class="rounded"><img src="/assets/img/photos/crop-1.jpg" alt="BI"></figure>
                   </div>
                   <!--/column -->
                   <div class="col-md-12">
-                    <figure class="rounded"><img src="./../assets/img/photos/crop-2.webp" alt="BI"></figure>
+                    <figure class="rounded"><img src="/assets/img/photos/crop-2.webp" alt="BI"></figure>
                   </div>
                   <!--/column -->
                 </div>
@@ -81,7 +81,7 @@ include(__DIR__ . '/../shared/head.php');
               </div>
               <!--/column -->
               <div class="col-md-6">
-                <figure class="rounded"><img src="./../assets/img/photos/crop-3.webp"  alt="BI"></figure>
+                <figure class="rounded"><img src="/assets/img/photos/crop-3.webp"  alt="BI"></figure>
               </div>
               <!--/column -->
             </div>
@@ -101,7 +101,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/design.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/design.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="customized_solutions" class="mb-1">Solutions personnalisées</h4>
@@ -113,7 +113,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/cloud-computing.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/cloud-computing.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="data_integration" class="mb-1">Intégration des données</h4>
@@ -125,7 +125,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/bar-chart.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/bar-chart.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="advanced_analytics" class="mb-1">Analyses avancées</h4>
@@ -137,7 +137,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/headphone.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/headphone.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="training_support" class="mb-1">Formation et support</h4>
@@ -149,7 +149,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/laptop.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/laptop.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="user_friendly_interfaces" class="mb-1">Expériences utilisateur conviviales</h4>
@@ -161,7 +161,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-6 col-lg-4">
             <div class="d-flex flex-row">
               <div>
-                <img src="./../assets/img/icons/lineal/secure.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-primary me-4" alt="" />
+                <img src="/assets/img/icons/lineal/secure.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-primary me-4" alt="" />
               </div>
               <div>
                 <h4 id="data_security" class="mb-1">Sécurité des données</h4>
@@ -178,7 +178,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-8 col-lg-5 position-relative">
             <div class="shape bg-line green rounded-circle rellax w-18 h-18" data-rellax-speed="1" style="top: -2.2rem; left: -2.4rem;"></div>
             <div class="shape rounded bg-soft-primary rellax d-md-block" data-rellax-speed="0" style="bottom: -1.8rem; right: -1.5rem; width: 85%; height: 90%; "></div>
-            <figure class="rounded"><img src="./../assets/img/photos/customer-1.jpg" alt="Relations commerciales" /></figure>
+            <figure class="rounded"><img src="/assets/img/photos/customer-1.jpg" alt="Relations commerciales" /></figure>
           </div>
           <!--/column -->
           <div class="col-lg-5 col-xl-6 offset-lg-1">
@@ -235,18 +235,55 @@ include(__DIR__ . '/../shared/head.php');
       <!-- /.container -->
     </section>
     <!-- /section -->
-      <section class="wrapper image-wrapper bg-image bg-overlay" data-image-src="./../assets/img/photos/home-banner.jpg">
+      <section class="wrapper bg-light">
+          <div class="container py-14 py-md-16">
+              <h2 class="fs-16 text-uppercase text-muted mb-3 text-center">Nos services</h2>
+              <h3 class="display-4 mb-10 text-center">Trois axes d'expertise</h3>
+              <div class="row gx-md-8 gx-xl-12 gy-8">
+                  <div class="col-md-4">
+                      <div class="card border-0 shadow-lg h-100">
+                          <div class="card-body p-7">
+                              <i class="uil uil-database text-primary fs-50 mb-3"></i>
+                              <h4>Data</h4>
+                              <p class="mb-4">Datawarehouse, ETL, dashboarding, data quality. Une expertise éprouvée auprès de grands groupes.</p>
+                              <a href="/fr/services/data" class="more hover">Découvrir →</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card border-0 shadow-lg h-100">
+                          <div class="card-body p-7">
+                              <i class="uil uil-suitcase text-primary fs-50 mb-3"></i>
+                              <h4>ERP <span class="badge bg-pale-primary text-primary rounded-pill ms-2 fs-12">Partenaire Odoo</span></h4>
+                              <p class="mb-4">Implémentation et support Odoo pour PME — du diagnostic au support post go-live.</p>
+                              <a href="/fr/services/erp" class="more hover">Découvrir →</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card border-0 shadow-lg h-100">
+                          <div class="card-body p-7">
+                              <i class="uil uil-brain text-primary fs-50 mb-3"></i>
+                              <h4>IA</h4>
+                              <p class="mb-4">L'IA appliquée au métier : marchés publics, gestion administrative, automatisation.</p>
+                              <a href="/fr/services/ia" class="more hover">Découvrir →</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="wrapper image-wrapper bg-image bg-overlay" data-image-src="/assets/img/photos/home-banner.jpg">
           <div class="container py-18 text-center">
               <div class="row">
                   <div class="col-lg-10 col-xl-10 col-xxl-8 mx-auto">
-                      <h2 id="discover_bi_expertise" class="display-4 px-lg-10 px-xl-13 px-xxl-10 text-white pb-10">Découvrez nos expertises</h2>
-                      <span><a id="business_button" href="business.php" class="btn btn-lg btn-white rounded-pill">Entreprises</a></span>
+                      <h2 class="display-4 px-lg-10 px-xl-13 px-xxl-10 text-white pb-10">Nos solutions partenaires</h2>
+                      <span><a href="/fr/solutions/odoo" class="btn btn-lg btn-white rounded-pill me-2 mb-2">Odoo</a></span>
+                      <span><a href="/fr/solutions/qlik" class="btn btn-lg btn-white rounded-pill me-2 mb-2">Qlik Sense</a></span>
+                      <span><a href="/fr/solutions/powerbi" class="btn btn-lg btn-white rounded-pill mb-2">Power BI</a></span>
                   </div>
-                  <!--/column -->
               </div>
-              <!--/.row -->
           </div>
-          <!-- /.container -->
       </section>
   </div>
 
@@ -258,8 +295,8 @@ include(__DIR__ . '/../shared/head.php');
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-  <script src="./../assets/js/plugins.js"></script>
-  <script src="./../assets/js/theme.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/theme.js"></script>
 
 </body>
 

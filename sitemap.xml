@@ -5,70 +5,59 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <url>
-    <loc>https://insight91.be/en/</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>1.00</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/"/>
+  <!-- French (default) -->
+  <url><loc>https://insight91.be/fr/</loc><priority>1.00</priority>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/"/>
-  </url>
-
-  <url>
-    <loc>https://insight91.be/en/business</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/business"/>
-    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/business"/>
-  </url>
-
-  <url>
-    <loc>https://insight91.be/en/qlik</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/qlik"/>
-    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/qlik"/>
-  </url>
-
-  <url>
-    <loc>https://insight91.be/en/powerbi</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/powerbi"/>
-    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/powerbi"/>
-  </url>
-
-  <url>
-    <loc>https://insight91.be/fr/</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>0.80</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/"/>
-    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/"/>
+  </url>
+  <url><loc>https://insight91.be/fr/services/data</loc><priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/services/data"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/services/data"/>
+  </url>
+  <url><loc>https://insight91.be/fr/services/erp</loc><priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/services/erp"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/services/erp"/>
+  </url>
+  <url><loc>https://insight91.be/fr/services/ia</loc><priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/services/ia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/services/ia"/>
+  </url>
+  <url><loc>https://insight91.be/fr/solutions/odoo</loc><priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/solutions/odoo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/solutions/odoo"/>
+  </url>
+  <url><loc>https://insight91.be/fr/solutions/qlik</loc><priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/solutions/qlik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/solutions/qlik"/>
+  </url>
+  <url><loc>https://insight91.be/fr/solutions/powerbi</loc><priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/solutions/powerbi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/solutions/powerbi"/>
+  </url>
+  <url><loc>https://insight91.be/fr/blog</loc><priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/blog"/>
+  </url>
+  <url><loc>https://insight91.be/fr/about</loc><priority>0.60</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/about"/>
+  </url>
+  <url><loc>https://insight91.be/fr/contact</loc><priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/contact"/>
   </url>
 
-  <url>
-    <loc>https://insight91.be/fr/business</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>0.64</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/business"/>
-    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/business"/>
-  </url>
-
-  <url>
-    <loc>https://insight91.be/fr/qlik</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>0.64</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/qlik"/>
-    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/qlik"/>
-  </url>
-
-  <url>
-    <loc>https://insight91.be/fr/powerbi</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>0.64</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/powerbi"/>
-    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/powerbi"/>
-  </url>
+  <!-- English -->
+  <url><loc>https://insight91.be/en/</loc><priority>0.90</priority></url>
+  <url><loc>https://insight91.be/en/services/data</loc><priority>0.70</priority></url>
+  <url><loc>https://insight91.be/en/services/erp</loc><priority>0.70</priority></url>
+  <url><loc>https://insight91.be/en/services/ia</loc><priority>0.70</priority></url>
+  <url><loc>https://insight91.be/en/solutions/odoo</loc><priority>0.70</priority></url>
+  <url><loc>https://insight91.be/en/solutions/qlik</loc><priority>0.70</priority></url>
+  <url><loc>https://insight91.be/en/solutions/powerbi</loc><priority>0.70</priority></url>
+  <url><loc>https://insight91.be/en/blog</loc><priority>0.60</priority></url>
+  <url><loc>https://insight91.be/en/about</loc><priority>0.50</priority></url>
+  <url><loc>https://insight91.be/en/contact</loc><priority>0.60</priority></url>
 
 </urlset>

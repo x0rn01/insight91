@@ -2,15 +2,15 @@
 $pageMetaDescription = "Leverage Microsoft Power BI with Insight 91 to transform your data into actionable insights. Enhance your business decisions with powerful analytics.";
 $pageTitle = "Microsoft Power BI Solutions";
 $lang = 'en';
-$currentPage = 'powerbi';
-include(__DIR__ . '/../shared/head.php');
+$currentPage = 'solutions/powerbi';
+include(__DIR__ . '/../../shared/head.php');
 ?>
 <body>
   <div class="content-wrapper bg-light">
     <?php
         $navbar = 'navbar-dark';
         $logo = 'logo-light';
-        include(__DIR__ . '/../shared/header.php');
+        include(__DIR__ . '/../../shared/header.php');
     ?>
     <!-- /header -->
     <section class="wrapper gradient-4 bg-lines">
@@ -37,7 +37,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-lg-6 position-relative">
             <div class="shape bg-line leaf rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; right: -0.6rem;"></div>
             <div class="shape bg-pale-violet rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; left: -0.4rem;"></div>
-            <figure class="rounded mb-0 hover-scale"><img src="../assets/img/photos/powerbi1.jpg" alt=""></figure>
+            <figure class="rounded mb-0 hover-scale"><img src="/assets/img/photos/powerbi1.jpg" alt=""></figure>
           </div>
           <!--/column -->
           <div class="col-lg-6">
@@ -106,15 +106,15 @@ include(__DIR__ . '/../shared/head.php');
   </div>
   <!-- /.content-wrapper -->
   <?php
-      include(__DIR__ . '/../shared/footer.php');
+      include(__DIR__ . '/../../shared/footer.php');
   ?>
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-  <script src="../assets/js/plugins.js"></script>
-  <script src="../assets/js/theme.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/theme.js"></script>
 </body>
 
 </html>
