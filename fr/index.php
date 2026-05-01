@@ -49,16 +49,16 @@ include(__DIR__ . '/../shared/head.php');
       </div>
     </section>
 
-    <!-- Hero mobile (full-bleed background, <lg) -->
-    <section class="d-lg-none wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong i91-hero" data-image-src="/assets/img/photos/hero.webp">
-      <div class="container d-flex align-items-center text-center">
-        <div class="row w-100 justify-content-center">
-          <div class="col-12" data-cues="slideInDown" data-group="page-title" data-delay="500">
-            <h1 class="display-1 text-white fs-46 mb-4">Vos données, votre ERP, votre IA — pilotés ensemble</h1>
-            <p class="lead fs-25 text-white lh-sm mb-7">Insight 91 accompagne PME et grandes organisations sur la donnée, la gestion ERP et l'intelligence artificielle.</p>
-            <a href="/fr/contact" class="btn btn-lg btn-primary rounded-pill">Contactez-nous</a>
-          </div>
-        </div>
+    <!-- Hero mobile (clean text + bullets, <lg) -->
+    <section class="d-lg-none wrapper bg-light">
+      <div class="container pt-13 pb-10">
+        <h1 class="display-2 mb-7">Vos données, votre ERP, votre IA — pilotés ensemble</h1>
+        <ul class="icon-list bullet-bg bullet-soft-primary mb-8">
+          <li><span><i class="uil uil-check"></i></span><span>Data, ERP &amp; IA — trois expertises sous un même toit.</span></li>
+          <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Partenaire Odoo officiel pour les PME.</span></li>
+          <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Expertise éprouvée auprès de grands groupes (Ethias, Securex, Rolls Royce).</span></li>
+        </ul>
+        <a href="/fr/contact" class="btn btn-lg btn-primary rounded-pill w-100">Contactez-nous</a>
       </div>
     </section>
     <section id="snippet-1" class="wrapper bg-light">

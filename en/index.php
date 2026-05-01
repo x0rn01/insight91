@@ -49,16 +49,16 @@ include(__DIR__ . '/../shared/head.php');
       </div>
     </section>
 
-    <!-- Hero mobile (full-bleed background, <lg) -->
-    <section class="d-lg-none wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong i91-hero" data-image-src="/assets/img/photos/hero.webp">
-      <div class="container d-flex align-items-center text-center">
-        <div class="row w-100 justify-content-center">
-          <div class="col-12" data-cues="slideInDown" data-group="page-title" data-delay="500">
-            <h1 class="display-1 text-white fs-46 mb-4">Your data, your ERP, your AI — steered together</h1>
-            <p class="lead fs-25 text-white lh-sm mb-7">Insight 91 supports SMBs and larger organizations on data, ERP and applied AI.</p>
-            <a href="/en/contact" class="btn btn-lg btn-primary rounded-pill">Contact Us</a>
-          </div>
-        </div>
+    <!-- Hero mobile (clean text + bullets, <lg) -->
+    <section class="d-lg-none wrapper bg-light">
+      <div class="container pt-13 pb-10">
+        <h1 class="display-2 mb-7">Your data, your ERP, your AI — steered together</h1>
+        <ul class="icon-list bullet-bg bullet-soft-primary mb-8">
+          <li><span><i class="uil uil-check"></i></span><span>Data, ERP &amp; AI — three expertises under one roof.</span></li>
+          <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Official Odoo partner for SMBs.</span></li>
+          <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Hands-on track record with large groups (Ethias, Securex, Rolls Royce).</span></li>
+        </ul>
+        <a href="/en/contact" class="btn btn-lg btn-primary rounded-pill w-100">Contact Us</a>
       </div>
     </section>
     <section id="snippet-1" class="wrapper bg-light">
