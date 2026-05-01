@@ -33,12 +33,29 @@ include(__DIR__ . '/../shared/head.php');
     include(__DIR__ . '/../shared/header.php');
     ?>
 
-    <section class="wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong i91-hero" data-image-src="/assets/img/photos/hero.webp">
-      <div class="container d-flex align-items-center">
-        <div class="row w-100">
-          <div class="col-lg-9 col-xl-8" data-cues="slideInDown" data-group="page-title" data-delay="500">
-            <h1 class="display-1 text-white fs-46 mb-5">Your data, your ERP, your AI — steered together</h1>
-            <p class="lead fs-25 text-white lh-sm mb-8">Insight 91 supports SMBs and larger organizations on three complementary axes: data, ERP and applied AI.</p>
+    <!-- Hero desktop (split layout, lg+) -->
+    <section class="wrapper bg-light position-relative min-vh-70 d-none d-lg-flex align-items-center mt-lg-20">
+      <div class="rounded-4-lg-start col-lg-6 order-lg-2 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100 min-vh-40" data-image-src="/assets/img/photos/main.webp"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="mt-lg-n10 ps-lg-0 pe-lg-13 text-lg-start" data-cues="slideInDown" data-group="page-title" data-delay="600">
+              <h1 class="display-1 mb-5">Your data, your ERP, your AI — steered together</h1>
+              <p class="lead fs-25 lh-sm mb-7 pe-md-10">Insight 91 supports SMBs and larger organizations on three complementary axes: data, ERP and applied AI.</p>
+              <a href="/en/contact" class="btn btn-lg btn-primary rounded-pill">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero mobile (full-bleed background, <lg) -->
+    <section class="d-lg-none wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong i91-hero" data-image-src="/assets/img/photos/hero.webp">
+      <div class="container d-flex align-items-center text-center">
+        <div class="row w-100 justify-content-center">
+          <div class="col-12" data-cues="slideInDown" data-group="page-title" data-delay="500">
+            <h1 class="display-1 text-white fs-46 mb-4">Your data, your ERP, your AI — steered together</h1>
+            <p class="lead fs-25 text-white lh-sm mb-7">Insight 91 supports SMBs and larger organizations on data, ERP and applied AI.</p>
             <a href="/en/contact" class="btn btn-lg btn-primary rounded-pill">Contact Us</a>
           </div>
         </div>
