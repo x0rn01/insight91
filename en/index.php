@@ -257,8 +257,7 @@ include(__DIR__ . '/../shared/head.php');
         <div class="row">
           <div class="col-lg-10 col-xl-10 col-xxl-8 mx-auto">
             <h2 id="discover_bi_expertise" class="display-4 px-lg-10 px-xl-13 px-xxl-10 text-white pb-10">Discover how our Business Intelligence expertise can elevate your sector to new heights of performance and insight</h2>
-            <span><a id="sport_button" href="sport.php" class="btn btn-lg btn-white rounded-pill me-2">Sport</a></span>
-            <span><a id="business_button" href="business.php" class="btn btn-lg btn-outline-white rounded-pill">Business</a></span>
+            <span><a id="business_button" href="business.php" class="btn btn-lg btn-white rounded-pill">Business</a></span>
           </div>
           <!--/column -->
         </div>

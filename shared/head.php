@@ -16,7 +16,7 @@ $baseUrl = "https://insight91.be";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo htmlspecialchars($metaDescription); ?>">
-    <meta name="keywords" content="football, business intelligence, qlik sense, power BI">
+    <meta name="keywords" content="business intelligence, qlik sense, power BI, ERP, Odoo, data, IA">
     <meta name="robots" content="index, follow">
     <title>Insight 91 - <?php echo htmlspecialchars($pageTitle); ?></title>
 

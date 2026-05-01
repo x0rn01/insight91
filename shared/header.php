@@ -34,11 +34,6 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a class="dropdown-item" href="<?php echo ($lang === 'fr') ? '/fr/sport.php' : '/en/sport.php'; ?>">
-                                        <?php echo ($lang === 'fr') ? 'Sports' : 'Professional Sports'; ?>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="dropdown-item" href="<?php echo ($lang === 'fr') ? '/fr/business.php' : '/en/business.php'; ?>">
                                         <?php echo ($lang === 'fr') ? 'Entreprises' : 'Business'; ?>
                                     </a>

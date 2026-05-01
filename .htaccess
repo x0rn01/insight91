@@ -4,6 +4,9 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Sport pages permanently removed — return 410 Gone for fast Google deindexing
+RewriteRule ^(en|fr)/sport(\.php)?/?$ - [G,L]
+
 # Redirect /en/index.php and /fr/index.php to /en/ and /fr/
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(en|fr)/index\.php\s [NC]
 RewriteRule ^ /%1/ [R=301,L]

@@ -16,14 +16,6 @@
   </url>
 
   <url>
-    <loc>https://insight91.be/en/sport</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/sport"/>
-    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/sport"/>
-  </url>
-
-  <url>
     <loc>https://insight91.be/en/business</loc>
     <lastmod>2024-10-17T20:06:18+00:00</lastmod>
     <priority>0.80</priority>
@@ -53,14 +45,6 @@
     <priority>0.80</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/"/>
     <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/"/>
-  </url>
-
-  <url>
-    <loc>https://insight91.be/fr/sport</loc>
-    <lastmod>2024-10-17T20:06:18+00:00</lastmod>
-    <priority>0.64</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://insight91.be/en/sport"/>
-    <xhtml:link rel="alternate" hreflang="fr-be" href="https://insight91.be/fr/sport"/>
   </url>
 
   <url>
