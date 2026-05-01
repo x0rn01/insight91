@@ -9,11 +9,10 @@ $year = date('Y');
             <div class="col-md-4 col-lg-3">
                 <div class="widget">
                     <img class="mb-4" src="/assets/img/logo-light.svg" alt="Insight 91" style="height:84px;" />
-                    <p class="mb-4"><?php echo $T(
+                    <p class="mb-0"><?php echo $T(
                         'Partenaire data, ERP et IA pour PME et grandes organisations.',
                         'Data, ERP and AI partner for SMBs and larger organizations.'
                     ); ?></p>
-                    <p class="mb-0">© <?php echo $year; ?> Insight 91</p>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
@@ -50,5 +49,7 @@ $year = date('Y');
                 </div>
             </div>
         </div>
+        <hr class="mt-10 mt-md-12 mb-5 opacity-25" />
+        <p class="mb-0 text-center text-md-start fs-14 text-muted">© <?php echo $year; ?> Insight 91</p>
     </div>
 </footer>

@@ -28,7 +28,7 @@ $contact = "/$L/contact";
             <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
                 <div class="offcanvas-header d-lg-none">
                     <a href="<?php echo $home; ?>">
-                        <img class="logo-header" src="/assets/img/logo-dark.svg" alt="Logo Insight91" />
+                        <img class="logo-header" src="/assets/img/logo-light.svg" alt="Logo Insight91" />
                     </a>
                     <button type="button"
                             class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>

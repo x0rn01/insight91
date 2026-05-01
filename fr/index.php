@@ -479,7 +479,7 @@ include(__DIR__ . '/../shared/head.php');
           margin-bottom: 1.25rem;
           text-transform: uppercase;
         }
-        .i91-zigzag-body p.lead { color: #4d5862; }
+        .i91-zigzag-body p.lead { color: #4d5862; font-size: 1.05rem; line-height: 1.6; }
         @media (max-width: 991px) {
           .i91-zigzag { gap: 3.5rem; }
           .i91-zigzag-row, .i91-zigzag-row.reverse {
