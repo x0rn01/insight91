@@ -33,30 +33,17 @@ include(__DIR__ . '/../shared/head.php');
     include(__DIR__ . '/../shared/header.php');
     ?>
 
-    <section class="wrapper bg-light position-relative min-vh-70 d-lg-flex align-items-center mt-lg-20">
-      <div class="rounded-4-lg-start col-lg-6 order-lg-2 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100 min-vh-40" data-image-src="/assets/img/photos/main.webp">
-      </div>
-      <!--/column -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="mt-10 mt-md-11 mt-lg-n10 px-10 px-md-11 ps-lg-0 pe-lg-13 text-center text-lg-start " data-cues="slideInDown" data-group="page-title" data-delay="600">
-              <h1 id="subtitle" class="display-1 mb-5">Your data, your ERP, your AI — steered together</h1>
-              <p id="tagline" class="lead fs-25 lh-sm mb-7 pe-md-10">Insight 91 supports SMBs and larger organizations on three complementary axes: data, ERP and applied AI.</p>
-              <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-                <span><a href="#snippet-1" class="btn btn-lg btn-primary rounded-pill me-2 scroll">Explore Now</a></span>
-                <span><a href="/en/contact" class="btn btn-lg btn-outline-primary rounded-pill">Contact Us</a></span>
-              </div>
-            </div>
-            <!--/div -->
+    <section class="wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong i91-hero" data-image-src="/assets/img/photos/hero.webp">
+      <div class="container d-flex align-items-center">
+        <div class="row w-100">
+          <div class="col-lg-9 col-xl-8" data-cues="slideInDown" data-group="page-title" data-delay="500">
+            <h1 class="display-1 text-white fs-46 mb-5">Your data, your ERP, your AI — steered together</h1>
+            <p class="lead fs-25 text-white lh-sm mb-8">Insight 91 supports SMBs and larger organizations on three complementary axes: data, ERP and applied AI.</p>
+            <a href="/en/contact" class="btn btn-lg btn-primary rounded-pill">Contact Us</a>
           </div>
-          <!--/column -->
         </div>
-        <!--/.row -->
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /section -->
     <section id="snippet-1" class="wrapper bg-light">
       <div class="container pt-14 pt-md-16 pb-0">
         <div class="row gx-lg-8 gx-xl-12 gy-12 align-items-center mb-3 mb-md-13">

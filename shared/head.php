@@ -75,6 +75,21 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
         background: linear-gradient(180deg, rgba(15,18,24,0.72) 0%, rgba(15,18,24,0.55) 100%);
       }
 
+      /* Home hero — full-bleed with background image, vertical centering */
+      .i91-hero {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+      }
+      .i91-hero.image-wrapper.bg-cover {
+        background-position: left center !important;
+      }
+      .i91-hero > .container { padding-top: 6rem; padding-bottom: 4rem; }
+      @media (max-width: 767.98px) {
+        .i91-hero { min-height: 60vh; }
+        .i91-hero > .container { padding-top: 5rem; padding-bottom: 3rem; }
+      }
+
       /* Header logo — cap height (logo SVG was tightly cropped, default sizing was too large) */
       .navbar .logo-header {
         max-height: 72px !important;
