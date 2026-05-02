@@ -173,7 +173,8 @@ include(__DIR__ . '/../../shared/head.php');
         flex-shrink: 0;
         width: 88px; height: 88px;
         border-radius: 50%;
-        background: var(--i91-gradient);
+        background: var(--bs-primary);
+        background-image: linear-gradient(135deg, rgba(255,255,255,.18), transparent 60%);
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -203,249 +204,18 @@ include(__DIR__ . '/../../shared/head.php');
       }
     </style>
 
-    <!-- 7 SERVICES -->
-    <section class="wrapper bg-light">
+    <!-- AREAS COVERED -->
+    <section class="wrapper bg-soft-primary">
       <div class="container py-14 py-md-16">
-        <div class="text-center mb-13">
-          <h2 class="fs-16 text-uppercase text-muted mb-3">Our services</h2>
-          <h3 class="display-5 mb-3">Seven services to drive your Odoo project</h3>
-          <p class="lead fs-lg mx-auto" style="max-width:680px;color:#4d5862;">From scoping to long-term maintenance, including custom development and team enablement.</p>
-        </div>
-
-        <div class="i91-srv-list">
-
-          <article class="i91-srv">
-            <div class="i91-srv-visual">
-              <span class="i91-srv-num">01</span>
-              <i class="uil uil-clipboard-notes"></i>
-            </div>
-            <div class="i91-srv-content">
-              <h3>Solution design</h3>
-              <p>An ERP that doesn't reflect your business processes is dead weight, not a lever. Solution design is what turns Odoo into a system aligned with your goals and existing IT ecosystem.</p>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Who it's for</p>
-                <ul>
-                  <li>Companies discovering Odoo, looking to scope their project properly</li>
-                  <li>Organizations migrating from another ERP (Sage, Cegid, etc.)</li>
-                  <li>SMBs with multi-year digital transformation roadmaps</li>
-                </ul>
-              </div>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Our approach</p>
-                <ul>
-                  <li><b>AS-IS</b> analysis and targeted <b>TO-BE</b> design</li>
-                  <li>Workflow modelling and tool interaction mapping</li>
-                  <li>Collaborative workshops with your business teams</li>
-                  <li>Architecture recommendations and effort/ROI sizing</li>
-                </ul>
-              </div>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Outcome</p>
-                <p>Start with a clear, optimised vision integrated into your environment — not flying blind.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="i91-srv reverse">
-            <div class="i91-srv-visual">
-              <span class="i91-srv-num">02</span>
-              <i class="uil uil-rocket"></i>
-            </div>
-            <div class="i91-srv-content">
-              <h3>Deployment &amp; integration</h3>
-              <p>An ERP must work from day one — no data loss, no business disruption. That's deployment work: every parameter, every flow, every automation, optimised for smooth operation.</p>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Who it's for</p>
-                <ul>
-                  <li>Organisations with clear specs, ready to execute</li>
-                  <li>SMBs and large accounts seeking structured, fast deployment</li>
-                </ul>
-              </div>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Our approach</p>
-                <ul>
-                  <li>Module installation, configuration, customisation</li>
-                  <li>Secure data migration from legacy systems</li>
-                  <li>Integration with existing tools (CRM, e-commerce, logistics, BI)</li>
-                  <li>Thorough functional testing and go-live support</li>
-                </ul>
-              </div>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Outcome</p>
-                <p>A ready-to-use Odoo, perfectly integrated, optimised for your teams.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="i91-srv">
-            <div class="i91-srv-visual">
-              <span class="i91-srv-num">03</span>
-              <i class="uil uil-code-branch"></i>
-            </div>
-            <div class="i91-srv-content">
-              <h3>Custom development</h3>
-              <p>Every business has unique needs. When the standard Odoo isn't enough, we build custom modules that integrate cleanly without making your instance a nightmare to upgrade.</p>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Who it's for</p>
-                <ul>
-                  <li>Organisations with specific processes outside standard Odoo</li>
-                  <li>High-growth SMBs automating their business flows</li>
-                  <li>Companies integrating Odoo into a complex IT ecosystem</li>
-                </ul>
-              </div>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">What we do</p>
-                <ul>
-                  <li>Bespoke Odoo modules for your trade</li>
-                  <li>Advanced workflow and business-rule automation</li>
-                  <li>Custom connectors for e-commerce, WMS, finance, logistics</li>
-                  <li>Personalisation of existing interfaces and features</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="i91-srv reverse">
-            <div class="i91-srv-visual">
-              <span class="i91-srv-num">04</span>
-              <i class="uil uil-graduation-cap"></i>
-            </div>
-            <div class="i91-srv-content">
-              <h3>Training &amp; change management</h3>
-              <p>The best ERP is useless if your users don't adopt it. Adoption is built — with profile-tailored sessions, materials grounded in your real processes, and post go-live support during the critical first weeks.</p>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Who it's for</p>
-                <ul>
-                  <li>Organisations who want a successful rollout (not just a finished one)</li>
-                  <li>Business teams needing <i>concrete</i> training, not generic demos</li>
-                  <li>SMBs building internal autonomy</li>
-                </ul>
-              </div>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">What we do</p>
-                <ul>
-                  <li><b>Train-the-trainer</b> model to create internal multipliers</li>
-                  <li>Custom sessions anchored in your real processes</li>
-                  <li>Internal knowledge base: quick guides, screenshots, tips</li>
-                  <li>Post go-live coaching during the critical first weeks</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="i91-srv">
-            <div class="i91-srv-visual">
-              <span class="i91-srv-num">05</span>
-              <i class="uil uil-shield-check"></i>
-            </div>
-            <div class="i91-srv-content">
-              <h3>Maintenance &amp; evolution</h3>
-              <p>An ERP must evolve with your business. Our continuous support keeps your Odoo stable, secure and aligned with your goals — no surprises, no downtime.</p>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Who it's for</p>
-                <ul>
-                  <li>Organisations aiming for long-term performance</li>
-                  <li>Teams seeking expert support and continuous improvement</li>
-                  <li>SMBs scaling their Odoo configuration over time</li>
-                </ul>
-              </div>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">What we do</p>
-                <ul>
-                  <li>Dedicated support team with structured ticketing and clear SLAs</li>
-                  <li>Regular optimisations and feature recommendations</li>
-                  <li>Proactive guidance on version upgrades and scalability</li>
-                  <li>Access to our <b>Evolution Contract</b> for long-term peace of mind</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="i91-srv reverse">
-            <div class="i91-srv-visual">
-              <span class="i91-srv-num">06</span>
-              <i class="uil uil-arrow-circle-up"></i>
-            </div>
-            <div class="i91-srv-content">
-              <h3>Odoo version upgrade</h3>
-              <p>New Odoo versions ship significant improvements — predictive AI, dispatch logistics, performance — but a migration deserves preparation. We plan, test, and switch over smoothly.</p>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Who it's for</p>
-                <ul>
-                  <li>Organisations on Odoo 16 or earlier, off the support window</li>
-                  <li>Companies wanting to leverage latest features (AI, mobile)</li>
-                  <li>SMBs with custom modules requiring secure migration</li>
-                </ul>
-              </div>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">What we do</p>
-                <ul>
-                  <li>Technical and functional audit of your current configuration</li>
-                  <li>Migration path adapted to your code and business stakes</li>
-                  <li>Compatibility testing and pre-cutover validation</li>
-                  <li>Post-upgrade optimisation and user re-adoption</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="i91-srv">
-            <div class="i91-srv-visual">
-              <span class="i91-srv-num">07</span>
-              <i class="uil uil-search-alt"></i>
-            </div>
-            <div class="i91-srv-content">
-              <h3>ERP audit</h3>
-              <p>A poorly configured Odoo can become a brake rather than an accelerator. Our audit identifies gaps, optimises processes, and secures your instance — with a prioritised action plan to follow.</p>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">Who it's for</p>
-                <ul>
-                  <li>Companies already on Odoo wanting a thorough evaluation</li>
-                  <li>Organisations who worked with another integrator, seeking an independent view</li>
-                  <li>Companies wanting to strengthen security, performance, adoption</li>
-                </ul>
-              </div>
-              <div class="i91-srv-block">
-                <p class="i91-srv-block-label">What we do</p>
-                <ul>
-                  <li>Technical and functional analysis: configuration, performance, flows</li>
-                  <li>Security review: permissions, critical access, compliance</li>
-                  <li>Adoption audit: real usage and improvement areas</li>
-                  <li>Prioritised recommendations with sized action plan</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- EVOLUTION CONTRACT -->
-    <section class="wrapper bg-light">
-      <div class="container pb-14 pb-md-16">
-        <div class="i91-callout">
-          <span class="i91-callout-eyebrow">Long-term support</span>
-          <h2>The Evolution Contract</h2>
-          <p>A high-performance ERP doesn't stop at go-live. Odoo evolves, your business evolves — our contract keeps your instance aligned, secure, and a step ahead.</p>
-          <div class="i91-callout-grid">
-            <div class="i91-callout-feat">
-              <i class="uil uil-headphones-alt"></i>
-              <h4>Reactive support</h4>
-              <p>Questions, bugs, tweaks — a dedicated team and structured ticketing.</p>
-            </div>
-            <div class="i91-callout-feat">
-              <i class="uil uil-sync"></i>
-              <h4>Updates included</h4>
-              <p>Version upgrades and security patches, no surprise fees.</p>
-            </div>
-            <div class="i91-callout-feat">
-              <i class="uil uil-chart-line"></i>
-              <h4>Continuous optimisation</h4>
-              <p>Proactive monitoring and regular evolution recommendations.</p>
-            </div>
-          </div>
-          <a href="/en/contact" class="btn btn-light rounded-pill">Discover the contract <i class="uil uil-arrow-right ms-1"></i></a>
+        <h2 class="fs-16 text-uppercase text-muted mb-3 text-center">Areas covered</h2>
+        <h3 class="display-5 mb-10 text-center">An ERP that covers your whole business</h3>
+        <div class="row gx-lg-8 gx-xl-12 gy-6">
+          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-money-bill text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">Finance &amp; Accounting</h4><p class="mb-0">Belgian accounting, VAT, auto-reconciliation, financial statements, reporting.</p></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-shopping-cart text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">Sales &amp; CRM</h4><p class="mb-0">Quotes, orders, invoices, pipeline, subscriptions.</p></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-package text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">Stock &amp; Purchasing</h4><p class="mb-0">Multi-warehouse, replenishment, traceability.</p></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-users-alt text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">HR &amp; Payroll</h4><p class="mb-0">Recruiting, leave, expenses, social integration.</p></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-shop text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">E-commerce &amp; POS</h4><p class="mb-0">Online store, in-store POS, unified stock sync.</p></div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-cog text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">Production &amp; MRP</h4><p class="mb-0">Bills of materials, work orders, scheduling.</p></div></div></div>
         </div>
       </div>
     </section>
