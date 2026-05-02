@@ -1,8 +1,14 @@
 RewriteEngine On
 
+# Disable directory listings (avoids Apache showing /fr/blog/ as an index page)
+Options -Indexes
+
 # Force HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Blog listing: /(en|fr)/blog/ (with trailing slash, no slug) → /(en|fr)/blog
+RewriteRule ^(en|fr)/blog/$ /$1/blog [R=301,L]
 
 # Sport pages permanently removed — return 410 Gone for fast Google deindexing
 RewriteRule ^(en|fr)/sport(\.php)?/?$ - [G,L]
