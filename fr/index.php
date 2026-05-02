@@ -341,7 +341,7 @@ include(__DIR__ . '/../shared/head.php');
         .i91-service-card:hover .i91-service-cta { gap: .65rem; }
         .i91-service-card:hover .i91-service-cta i { transform: translateX(2px); }
       </style>
-      <section class="wrapper bg-soft-primary">
+      <section class="wrapper bg-light">
         <div class="container py-14 py-md-16">
           <h2 class="fs-16 text-uppercase text-muted mb-3 text-center">Nos partenaires</h2>
           <h3 class="display-4 mb-13 text-center">Les solutions qui font la différence</h3>
