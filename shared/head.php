@@ -138,43 +138,42 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
       .i91-blog-list {
         display: flex;
         flex-direction: column;
-        gap: 1.75rem;
-        max-width: 940px;
-        margin: 0 auto;
+        gap: 1.5rem;
       }
       .i91-blog-card {
         display: grid;
-        grid-template-columns: 38% 1fr;
+        grid-template-columns: 32% 1fr;
         background: #fff;
-        border-radius: 20px;
+        border-radius: 18px;
         overflow: hidden;
-        box-shadow: 0 8px 26px -10px rgba(15,18,24,.12);
+        box-shadow: 0 6px 22px -10px rgba(15,18,24,.12);
         transition: transform .3s ease, box-shadow .3s ease;
       }
       .i91-blog-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 16px 40px -10px rgba(15,18,24,.2);
+        transform: translateY(-3px);
+        box-shadow: 0 14px 36px -10px rgba(15,18,24,.2);
       }
       .i91-blog-card-img {
         display: block;
-        background-size: cover;
+        background-size: contain;            /* show full image, no cropping */
+        background-repeat: no-repeat;
         background-position: center;
-        background-color: #e8f4fa;
-        min-height: 240px;
+        background-color: #eaf4f9;            /* soft brand tint when image has whitespace */
+        aspect-ratio: 4 / 3;                  /* fixed ratio so all cards align */
       }
       .i91-blog-card-body {
-        padding: 1.75rem 2rem;
+        padding: 1.4rem 1.75rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
       .i91-blog-card-meta {
         display: flex;
-        gap: 1rem;
+        gap: .75rem;
         flex-wrap: wrap;
         align-items: center;
-        margin-bottom: .75rem;
-        font-size: .78rem;
+        margin-bottom: .6rem;
+        font-size: .75rem;
         color: #6e7d8c;
       }
       .i91-blog-card-tag {
@@ -184,10 +183,10 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
         text-transform: uppercase;
       }
       .i91-blog-card-title {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 700;
-        line-height: 1.25;
-        margin-bottom: .75rem;
+        line-height: 1.3;
+        margin-bottom: .55rem;
       }
       .i91-blog-card-title a {
         color: #0f1218;
@@ -204,12 +203,12 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
       }
       .i91-blog-card-excerpt {
         color: #4d5862;
-        margin-bottom: 1rem;
+        margin-bottom: .85rem;
         line-height: 1.55;
-        font-size: .98rem;
+        font-size: .92rem;
       }
       .i91-blog-card-more {
-        font-size: .82rem;
+        font-size: .8rem;
         font-weight: 600;
         color: var(--bs-primary);
         text-decoration: none;
@@ -222,9 +221,9 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
       .i91-blog-card-more:hover { gap: .7rem; color: var(--bs-primary); }
       @media (max-width: 767.98px) {
         .i91-blog-card { grid-template-columns: 1fr; }
-        .i91-blog-card-img { aspect-ratio: 16 / 9; min-height: 0; }
-        .i91-blog-card-body { padding: 1.5rem; }
-        .i91-blog-card-title { font-size: 1.2rem; }
+        .i91-blog-card-img { aspect-ratio: 16 / 9; }
+        .i91-blog-card-body { padding: 1.25rem 1.5rem; }
+        .i91-blog-card-title { font-size: 1.1rem; }
       }
 
       /* ==== Modern CTA section — split card: image left, color block right ==== */
