@@ -34,36 +34,22 @@ include(__DIR__ . '/../shared/head.php');
         <?php if (empty($posts)): ?>
           <p class="lead text-center">Aucun article pour le moment. Revenez bientôt !</p>
         <?php else: ?>
-          <div class="row gx-lg-8 gx-xl-12 gy-10">
+          <div class="i91-blog-list">
             <?php foreach ($posts as $post): ?>
-              <article class="col-md-6 col-lg-4">
-                <div class="card border-0 shadow-lg h-100">
-                  <?php if (!empty($post['cover'])): ?>
-                    <a href="/fr/blog/<?php echo htmlspecialchars($post['slug']); ?>">
-                      <figure class="overlay overlay-1 hover-scale rounded-top mb-0">
-                        <img src="<?php echo htmlspecialchars($post['cover']); ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" />
-                      </figure>
-                    </a>
-                  <?php endif; ?>
-                  <div class="card-body p-6">
-                    <div class="post-header">
-                      <div class="post-category text-line text-primary fw-bold mb-3 fs-14 text-uppercase">
-                        <?php echo $post['tags'] ? htmlspecialchars($post['tags'][0]) : 'Article'; ?>
-                      </div>
-                      <h2 class="post-title h3 mb-3">
-                        <a class="link-dark" href="/fr/blog/<?php echo htmlspecialchars($post['slug']); ?>"><?php echo htmlspecialchars($post['title']); ?></a>
-                      </h2>
-                    </div>
-                    <div class="post-content">
-                      <p><?php echo htmlspecialchars($post['excerpt']); ?></p>
-                    </div>
+              <?php $url = '/fr/blog/' . $post['slug']; ?>
+              <article class="i91-blog-card">
+                <a href="<?php echo htmlspecialchars($url); ?>" class="i91-blog-card-img" style="background-image:url('<?php echo htmlspecialchars($post['cover']); ?>')" aria-label="<?php echo htmlspecialchars($post['title']); ?>"></a>
+                <div class="i91-blog-card-body">
+                  <div class="i91-blog-card-meta">
+                    <span class="i91-blog-card-tag"><?php echo $post['tags'] ? htmlspecialchars($post['tags'][0]) : 'Article'; ?></span>
+                    <span><i class="uil uil-calendar-alt"></i> <?php echo htmlspecialchars(format_post_date($post['date'], 'fr')); ?></span>
+                    <span><i class="uil uil-clock"></i> <?php echo (int)$post['reading_minutes']; ?> min</span>
                   </div>
-                  <div class="card-footer p-6 bg-transparent">
-                    <ul class="post-meta d-flex mb-0 list-unstyled fs-14">
-                      <li class="post-date me-3"><i class="uil uil-calendar-alt me-1"></i><?php echo htmlspecialchars(format_post_date($post['date'], 'fr')); ?></li>
-                      <li><i class="uil uil-clock me-1"></i><?php echo (int)$post['reading_minutes']; ?> min</li>
-                    </ul>
-                  </div>
+                  <h2 class="i91-blog-card-title">
+                    <a href="<?php echo htmlspecialchars($url); ?>"><?php echo htmlspecialchars($post['title']); ?></a>
+                  </h2>
+                  <p class="i91-blog-card-excerpt"><?php echo htmlspecialchars($post['excerpt']); ?></p>
+                  <a href="<?php echo htmlspecialchars($url); ?>" class="i91-blog-card-more">Lire l'article <i class="uil uil-arrow-right"></i></a>
                 </div>
               </article>
             <?php endforeach; ?>
