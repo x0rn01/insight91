@@ -56,11 +56,11 @@ include(__DIR__ . '/../shared/head.php');
               <div class="col-md-6">
                 <div class="row gx-md-5 gy-5">
                   <div class="col-md-10 offset-md-2">
-                    <figure class="rounded"><img src="/assets/img/photos/crop-1.webp" loading="lazy" alt="BI"></figure>
+                    <figure class="rounded"><img src="/assets/img/photos/crop-1.webp" width="2572" height="2773"></figure>
                   </div>
                   <!--/column -->
                   <div class="col-md-12">
-                    <figure class="rounded"><img src="/assets/img/photos/crop-2.webp" loading="lazy" alt="BI"></figure>
+                    <figure class="rounded"><img src="/assets/img/photos/crop-2.webp" width="784" height="662"></figure>
                   </div>
                   <!--/column -->
                 </div>
@@ -68,7 +68,7 @@ include(__DIR__ . '/../shared/head.php');
               </div>
               <!--/column -->
               <div class="col-md-6">
-                <figure class="rounded"><img src="/assets/img/photos/crop-3.webp" loading="lazy"  alt="BI"></figure>
+                <figure class="rounded"><img src="/assets/img/photos/crop-3.webp" width="646" height="1228"></figure>
               </div>
               <!--/column -->
             </div>
@@ -165,7 +165,7 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-md-8 col-lg-5 position-relative">
             <div class="shape bg-line green rounded-circle rellax w-18 h-18" data-rellax-speed="1" style="top: -2.2rem; left: -2.4rem;"></div>
             <div class="shape rounded bg-soft-primary rellax d-md-block" data-rellax-speed="0" style="bottom: -1.8rem; right: -1.5rem; width: 85%; height: 90%; "></div>
-            <figure class="rounded"><img src="/assets/img/photos/customer-1.webp" loading="lazy" alt="Relations commerciales" /></figure>
+            <figure class="rounded"><img src="/assets/img/photos/customer-1.webp" width="612" height="408"/></figure>
           </div>
           <!--/column -->
           <div class="col-lg-5 col-xl-6 offset-lg-1">

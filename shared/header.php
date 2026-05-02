@@ -81,12 +81,12 @@ $contact = "/$L/contact";
                         <ul class="dropdown-menu">
                             <li class="nav-item">
                                 <a class="dropdown-item" href="/en/">
-                                    <img src="/assets/img/flags/uk.png" loading="lazy" alt="UK Flag" style="height:20px;padding-right:5px"> En
+                                    <img src="/assets/img/flags/uk.png" width="24" height="24"> En
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="dropdown-item" href="/fr/">
-                                    <img src="/assets/img/flags/france.png" loading="lazy" alt="FR Flag" style="height:20px;padding-right:5px"> Fr
+                                    <img src="/assets/img/flags/france.png" width="24" height="24"> Fr
                                 </a>
                             </li>
                         </ul>

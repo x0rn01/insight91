@@ -29,7 +29,7 @@ include(__DIR__ . '/../shared/head.php');
             <p class="lead fs-lg mb-3">We believe every organisation, from local shops to large groups, deserves data and ERP tools that actually work — without jargon and without unnecessary complexity.</p>
             <p class="mb-0">Our approach: deeply understand your business, pick technologies that fit your context, and walk your teams through to autonomy.</p>
           </div>
-          <div class="col-lg-6"><figure class="rounded"><img src="/assets/img/photos/about-1.webp" loading="lazy" alt="Our mission" /></figure></div>
+          <div class="col-lg-6"><figure class="rounded"><img src="/assets/img/photos/about-1.webp" width="2048" height="1265"/></figure></div>
         </div>
       </div>
     </section>

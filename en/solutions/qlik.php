@@ -38,7 +38,7 @@ include(__DIR__ . '/../../shared/head.php');
           <div class="col-lg-6 order-lg-2 position-relative">
             <div class="shape bg-line aqua rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; left: -0.6rem;"></div>
             <div class="shape bg-pale-red rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; right: -0.4rem;"></div>
-            <figure class="rounded mb-0"><img src="/assets/img/photos/qlik-sense.webp" loading="lazy" alt=""></figure>
+            <figure class="rounded mb-0"><img src="/assets/img/photos/qlik-sense.webp" width="1200" height="630"></figure>
           </div>
           <!--/column -->
           <div class="col-lg-6">

@@ -27,7 +27,7 @@ include(__DIR__ . '/../../shared/head.php');
         </figure>
 
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-          <div class="col-lg-6 order-lg-2"><figure class="rounded mb-0"><img src="/assets/img/photos/business1.webp" loading="lazy" alt="Odoo in action"></figure></div>
+          <div class="col-lg-6 order-lg-2"><figure class="rounded mb-0"><img src="/assets/img/photos/business1.webp" width="612" height="408"></figure></div>
           <div class="col-lg-6">
             <h2 class="display-4 mb-4">One platform, every business area</h2>
             <p class="mb-5">Odoo is a modular ERP suite covering an SMB's full needs: sales, accounting, inventory, HR, e-commerce, manufacturing. You activate what you need, when you need it.</p>
@@ -75,7 +75,7 @@ include(__DIR__ . '/../../shared/head.php');
             <p class="lead fs-lg mb-3">Butchery, ironwork, snacks, guesthouses, multi-sector SMBs — our clients find in Odoo a tool that adapts to their business, not the other way around.</p>
             <a href="/en/services/erp" class="btn btn-primary rounded-pill mt-3">Learn about our approach</a>
           </div>
-          <div class="col-lg-6"><figure class="rounded"><img src="/assets/img/photos/business5.webp" loading="lazy" alt="Odoo SMB" /></figure></div>
+          <div class="col-lg-6"><figure class="rounded"><img src="/assets/img/photos/business5.webp" width="2015" height="1435"/></figure></div>
         </div>
       </div>
     </section>
