@@ -92,7 +92,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/design.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="customized_solutions" class="mb-1">Customized Solutions</h4>
+                <h3 id="customized_solutions" class="mb-1">Customized Solutions</h3>
                 <p id="customized_solutions_description" class="mb-0">Our commitment lies in delivering customized BI solutions, tailoring each aspect to meet your unique requirements while adhering to industry standards.</p>
               </div>
             </div>
@@ -104,7 +104,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/cloud-computing.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="data_integration" class="mb-1">Data Integration</h4>
+                <h3 id="data_integration" class="mb-1">Data Integration</h3>
                 <p id="data_integration_description" class="mb-0">Seamlessly integrating diverse data sources, we provide you with a comprehensive view, ensuring your decision-making is well-informed and agile.</p>
               </div>
             </div>
@@ -116,7 +116,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/bar-chart.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="advanced_analytics" class="mb-1">Advanced Analytics</h4>
+                <h3 id="advanced_analytics" class="mb-1">Advanced Analytics</h3>
                 <p id="advanced_analytics_description" class="mb-0">Explore advanced analytics, including predictive modeling and machine learning, unlocking hidden insights and predicting future trends.</p>
               </div>
             </div>
@@ -128,7 +128,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/headphone.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="training_support" class="mb-1">Training and Support</h4>
+                <h3 id="training_support" class="mb-1">Training and Support</h3>
                 <p id="training_support_description" class="mb-0">Empower your team through comprehensive training programs and ongoing support, enhancing data literacy and maximizing the value of BI tools.</p>
               </div>
             </div>
@@ -140,7 +140,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/laptop.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="user_friendly_interfaces" class="mb-1">User-Friendly Interfaces</h4>
+                <h3 id="user_friendly_interfaces" class="mb-1">User-Friendly Interfaces</h3>
                 <p id="user_friendly_interfaces_description" class="mb-0">Prioritize user experience with our user-friendly interfaces, ensuring that interacting with data is intuitive and efficient for your team.</p>
               </div>
             </div>
@@ -152,7 +152,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/secure.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="data_security" class="mb-1">Data Security</h4>
+                <h3 id="data_security" class="mb-1">Data Security</h3>
                 <p id="data_security_description" class="mb-0">Rest easy with robust data security measures in place, instilling confidence in the protection of your sensitive business information.</p>
               </div>
             </div>
@@ -333,7 +333,7 @@ include(__DIR__ . '/../shared/head.php');
       }
       .i91-service-body { padding: 2.5rem 1.75rem 1.75rem; }
       .i91-service-body h4 { font-weight: 700; }
-      .i91-service-body p  { color: #6e7d8c; font-size: .98rem; margin-bottom: 1.25rem; }
+      .i91-service-body p  { color: #4d5862; font-size: .98rem; margin-bottom: 1.25rem; }
       .i91-service-cta {
         display: inline-flex; align-items: center; gap: .35rem;
         color: var(--bs-primary); font-weight: 600;
@@ -446,8 +446,8 @@ include(__DIR__ . '/../shared/head.php');
       .i91-zigzag-tag {
         display: inline-block;
         padding: .4rem .9rem;
-        background: rgba(var(--bs-primary-rgb), .12);
-        color: var(--bs-primary);
+        background: rgba(var(--bs-primary-rgb), .1);
+        color: #073a55;
         font-size: .8rem; font-weight: 600;
         border-radius: 999px; letter-spacing: .03em;
         margin-bottom: 1.25rem;

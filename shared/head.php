@@ -155,8 +155,8 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
         font-weight: 700;
         letter-spacing: .08em;
         text-transform: uppercase;
-        color: var(--bs-primary);
-        background: rgba(var(--bs-primary-rgb), .12);
+        color: #073a55;       /* darker for AA contrast on light bg */
+        background: rgba(var(--bs-primary-rgb), .1);
         border-radius: 999px;
         margin-bottom: 1.5rem;
       }

@@ -91,7 +91,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/design.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="customized_solutions" class="mb-1">Solutions personnalisées</h4>
+                <h3 id="customized_solutions" class="mb-1">Solutions personnalisées</h3>
                 <p id="customized_solutions_description" class="mb-0">Notre objectif est de créer des solutions BI sur mesure, développées selon toutes vos exigences, mais aussi selon les normes du secteur.</p>
               </div>
             </div>
@@ -103,7 +103,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/cloud-computing.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="data_integration" class="mb-1">Intégration des données</h4>
+                <h3 id="data_integration" class="mb-1">Intégration des données</h3>
                 <p id="data_integration_description" class="mb-0">Avec une intégration en douceur entre les nombreuses sources de données, nous vous présentons une vue unifiée afin que vous puissiez prendre des décisions éclairées basées sur des informations précises et récentes.</p>
               </div>
             </div>
@@ -115,7 +115,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/bar-chart.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="advanced_analytics" class="mb-1">Analyses avancées</h4>
+                <h3 id="advanced_analytics" class="mb-1">Analyses avancées</h3>
                 <p id="advanced_analytics_description" class="mb-0">Explorez des analyses avancées, y compris la modélisation prédictive et l'apprentissage automatique, dévoilant des insights cachées et prédisant les tendances futures.</p>
               </div>
             </div>
@@ -127,7 +127,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/headphone.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="training_support" class="mb-1">Formation et support</h4>
+                <h3 id="training_support" class="mb-1">Formation et support</h3>
                 <p id="training_support_description" class="mb-0">Donnez de la puissance à votre équipe avec des programmes de formation complets et un soutien continu qui améliorent la littératie des données et assurent que la valeur des outils BI est extraite.</p>
               </div>
             </div>
@@ -139,7 +139,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/laptop.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="user_friendly_interfaces" class="mb-1">Expériences utilisateur conviviales</h4>
+                <h3 id="user_friendly_interfaces" class="mb-1">Expériences utilisateur conviviales</h3>
                 <p id="user_friendly_interfaces_description" class="mb-0">Mettez l'expérience utilisateur en premier plan avec nos interfaces intuitives et interagissez avec les données de manière transparente et efficace pour votre équipe.</p>
               </div>
             </div>
@@ -151,7 +151,7 @@ include(__DIR__ . '/../shared/head.php');
                 <img src="/assets/img/icons/lineal/secure.svg" class="svg-inject icon-svg icon-svg-sm solid-mono text-primary me-4" alt="" />
               </div>
               <div>
-                <h4 id="data_security" class="mb-1">Sécurité des données</h4>
+                <h3 id="data_security" class="mb-1">Sécurité des données</h3>
                 <p id="data_security_description" class="mb-0">Ayez la tranquillité d'esprit que des mesures de sécurité des données très robustes sont en place pour établir la confiance dans la sécurité de vos informations commerciales sensibles.</p>
               </div>
             </div>
@@ -330,7 +330,7 @@ include(__DIR__ . '/../shared/head.php');
         }
         .i91-service-body { padding: 2.5rem 1.75rem 1.75rem; }
         .i91-service-body h4 { font-weight: 700; }
-        .i91-service-body p  { color: #6e7d8c; font-size: .98rem; margin-bottom: 1.25rem; }
+        .i91-service-body p  { color: #4d5862; font-size: .98rem; margin-bottom: 1.25rem; }
         .i91-service-cta {
           display: inline-flex; align-items: center; gap: .35rem;
           color: var(--bs-primary);
@@ -457,8 +457,8 @@ include(__DIR__ . '/../shared/head.php');
         .i91-zigzag-tag {
           display: inline-block;
           padding: .4rem .9rem;
-          background: rgba(var(--bs-primary-rgb), .12);
-          color: var(--bs-primary);
+          background: rgba(var(--bs-primary-rgb), .1);
+          color: #073a55;
           font-size: .8rem;
           font-weight: 600;
           border-radius: 999px;
