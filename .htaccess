@@ -2,13 +2,16 @@ RewriteEngine On
 
 # Disable directory listings (avoids Apache showing /fr/blog/ as an index page)
 Options -Indexes
+# Disable Apache's auto-redirect that adds trailing slash on directory paths
+# (otherwise /fr/blog → /fr/blog/ even though we serve blog.php)
+DirectorySlash Off
 
 # Force HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Blog listing: /(en|fr)/blog/ (with trailing slash, no slug) → /(en|fr)/blog
-RewriteRule ^(en|fr)/blog/$ /$1/blog [R=301,L]
+# Blog listing: /(en|fr)/blog or /(en|fr)/blog/ → blog.php (bypass directory match)
+RewriteRule ^(en|fr)/blog/?$ /$1/blog.php [L]
 
 # Sport pages permanently removed — return 410 Gone for fast Google deindexing
 RewriteRule ^(en|fr)/sport(\.php)?/?$ - [G,L]
