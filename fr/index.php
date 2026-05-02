@@ -42,14 +42,6 @@ include(__DIR__ . '/../shared/head.php');
         </h1>
         <p class="i91-m-hero-sub mb-8">Pilotés ensemble. Une équipe, trois axes complémentaires pour PME et grandes organisations.</p>
         <a href="/fr/contact" class="i91-cta i91-cta-block">Contactez-nous <i class="uil uil-arrow-right"></i></a>
-        <div class="i91-trust-strip mt-10">
-          <p class="i91-trust-label">Ils nous font confiance</p>
-          <div class="i91-trust-logos">
-            <span>Ethias</span><span>·</span>
-            <span>Securex</span><span>·</span>
-            <span>Rolls Royce</span>
-          </div>
-        </div>
       </div>
     </section>
     <section id="snippet-1" class="wrapper bg-light">
