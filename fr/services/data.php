@@ -153,8 +153,55 @@ include(__DIR__ . '/../../shared/head.php');
             <figure class="rounded"><img src="/assets/img/photos/data-screen.webp" loading="lazy" alt="Cas concrets data" /></figure>
           </div>
         </div>
+
+        <p class="i91-clients-label">Ils nous ont fait confiance</p>
+        <div class="i91-clients-wall">
+          <div class="i91-client"><img src="/assets/img/clients/ethias.webp" alt="Ethias" loading="lazy" /></div>
+          <div class="i91-client"><img src="/assets/img/clients/securex.svg" alt="Securex" loading="lazy" /></div>
+          <div class="i91-client i91-client-tall"><img src="/assets/img/clients/rolls-royce.svg" alt="Rolls-Royce" loading="lazy" /></div>
+        </div>
       </div>
     </section>
+
+    <style>
+      .i91-clients-label {
+        text-align: center;
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        color: #6e7d8c;
+        margin: 2rem 0 1.5rem;
+      }
+      .i91-clients-wall {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+      }
+      .i91-client {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        opacity: .7;
+        transition: opacity .25s ease, filter .25s ease;
+      }
+      .i91-client:hover { opacity: 1; }
+      .i91-client img {
+        max-height: 100%;
+        max-width: 180px;
+        height: auto;
+        width: auto;
+      }
+      .i91-client-tall img { max-height: 80px; max-width: 60px; }
+      @media (max-width: 575.98px) {
+        .i91-clients-wall { gap: 2rem; }
+        .i91-client { height: 48px; }
+        .i91-client-tall img { max-height: 64px; max-width: 48px; }
+      }
+    </style>
 
     <section class="wrapper bg-light">
       <div class="container py-14 py-md-16">
