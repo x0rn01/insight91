@@ -134,6 +134,76 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
       .i91-cta i { font-size: 1.15rem; line-height: 1; }
       .i91-cta-block { display: flex; width: 100%; }   /* full-width variant */
 
+      /* ==== Modern CTA section — split card: image left, color block right ==== */
+      .i91-cta-section {
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        border-radius: 28px;
+        overflow: hidden;
+        min-height: 320px;
+      }
+      .i91-cta-section-img {
+        background-color: #0d2e44;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/assets/img/photos/cta.webp');
+      }
+      .i91-cta-section-block {
+        background: #5fbed4;
+        padding: 3.5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #0a2236;
+      }
+      .i91-cta-section-eyebrow {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        opacity: .75;
+        margin-bottom: 1.5rem;
+      }
+      .i91-cta-section-title {
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -.01em;
+        margin-bottom: 2rem;
+        color: #0a2236;
+      }
+      .i91-cta-section-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .8rem 1.4rem;
+        background: #0a2236;
+        color: #fff !important;
+        border-radius: 999px;
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: gap .25s, transform .2s, box-shadow .25s;
+        align-self: flex-start;
+        box-shadow: 0 6px 18px -4px rgba(10,34,54,.4);
+      }
+      .i91-cta-section-btn:hover {
+        color: #fff;
+        gap: .85rem;
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px -4px rgba(10,34,54,.55);
+      }
+      .i91-cta-section-btn i { font-size: .9rem; }
+      @media (max-width: 991.98px) {
+        .i91-cta-section { grid-template-columns: 1fr; min-height: 0; border-radius: 20px; }
+        .i91-cta-section-img { display: none; }
+        .i91-cta-section-block { padding: 2.25rem 1.75rem; }
+        .i91-cta-section-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
+        .i91-cta-section-eyebrow { margin-bottom: 1rem; }
+      }
+
       /* ==== Mobile editorial hero ==== */
       .i91-m-hero { padding-top: 1rem; }
       .i91-m-hero-blob {

@@ -256,11 +256,16 @@ include(__DIR__ . '/../../shared/head.php');
     </section>
 
     <!-- CTA FINAL -->
-    <section class="wrapper bg-soft-primary">
-      <div class="container py-14 py-md-16 text-center">
-        <h2 class="display-5 mb-7">Une question, un projet ERP&nbsp;?</h2>
-        <p class="lead fs-lg mb-7">Échangeons sur votre besoin — un appel de cadrage est gratuit et sans engagement.</p>
-        <a href="/fr/contact" class="btn btn-lg btn-primary rounded-pill">Planifier un rendez-vous</a>
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">Prêt à moderniser ?</p>
+            <h2 class="i91-cta-section-title">Une question, un projet ERP ?</h2>
+            <a href="/fr/contact" class="i91-cta-section-btn">Planifier un rendez-vous <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -80,10 +80,16 @@ include(__DIR__ . '/../../shared/head.php');
       </div>
     </section>
 
-    <section class="wrapper bg-soft-primary">
-      <div class="container py-14 py-md-16 text-center">
-        <h2 class="display-5 mb-7">Want to see Odoo in action?</h2>
-        <a href="/en/contact" class="btn btn-lg btn-primary rounded-pill">Book a demo</a>
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">See Odoo in action</p>
+            <h2 class="i91-cta-section-title">Want to see Odoo in action?</h2>
+            <a href="/en/contact" class="i91-cta-section-btn">Book a demo <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 

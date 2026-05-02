@@ -77,9 +77,15 @@ include(__DIR__ . '/../../shared/head.php');
     </section>
 
     <section class="wrapper bg-light">
-      <div class="container py-14 py-md-16 text-center">
-        <h2 class="display-5 mb-7">Got a data project?</h2>
-        <a href="/en/contact" class="btn btn-lg btn-primary rounded-pill">Let's talk</a>
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">Start your project</p>
+            <h2 class="i91-cta-section-title">Got a data project?</h2>
+            <a href="/en/contact" class="i91-cta-section-btn">Let's talk <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 

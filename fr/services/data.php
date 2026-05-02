@@ -157,9 +157,15 @@ include(__DIR__ . '/../../shared/head.php');
     </section>
 
     <section class="wrapper bg-light">
-      <div class="container py-14 py-md-16 text-center">
-        <h2 class="display-5 mb-7">Vous avez un projet data ?</h2>
-        <a href="/fr/contact" class="btn btn-lg btn-primary rounded-pill">Discutons-en</a>
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">Démarrez votre projet</p>
+            <h2 class="i91-cta-section-title">Vous avez un projet data ?</h2>
+            <a href="/fr/contact" class="i91-cta-section-btn">Discutons-en <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 

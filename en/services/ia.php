@@ -82,11 +82,16 @@ include(__DIR__ . '/../../shared/head.php');
       </div>
     </section>
 
-    <section class="wrapper bg-soft-primary">
-      <div class="container py-14 py-md-16 text-center">
-        <h2 class="display-5 mb-7">Got an AI use case in mind?</h2>
-        <p class="lead fs-lg mb-7">We help validate feasibility and ROI in just a few weeks.</p>
-        <a href="/en/contact" class="btn btn-lg btn-primary rounded-pill">Start the conversation</a>
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">Launch your PoC</p>
+            <h2 class="i91-cta-section-title">Got an AI use case in mind?</h2>
+            <a href="/en/contact" class="i91-cta-section-btn">Start the conversation <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 

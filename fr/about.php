@@ -103,10 +103,16 @@ include(__DIR__ . '/../shared/head.php');
       </div>
     </section>
 
-    <section class="wrapper bg-soft-primary">
-      <div class="container py-14 py-md-16 text-center">
-        <h2 class="display-5 mb-7">Envie de nous rencontrer ?</h2>
-        <a href="/fr/contact" class="btn btn-lg btn-primary rounded-pill">Prenez contact</a>
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">Travaillons ensemble</p>
+            <h2 class="i91-cta-section-title">Envie de nous rencontrer ?</h2>
+            <a href="/fr/contact" class="i91-cta-section-btn">Prenez contact <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 

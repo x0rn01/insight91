@@ -136,10 +136,16 @@ include(__DIR__ . '/../../shared/head.php');
       </div>
     </section>
 
-    <section class="wrapper bg-soft-primary">
-      <div class="container py-14 py-md-16 text-center">
-        <h2 class="display-5 mb-7">Envie de découvrir Odoo en démo ?</h2>
-        <a href="/fr/contact" class="btn btn-lg btn-primary rounded-pill">Programmer une démo</a>
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">Découvrez Odoo</p>
+            <h2 class="i91-cta-section-title">Envie de découvrir Odoo en démo ?</h2>
+            <a href="/fr/contact" class="i91-cta-section-btn">Programmer une démo <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -144,11 +144,16 @@ include(__DIR__ . '/../../shared/head.php');
       </div>
     </section>
 
-    <section class="wrapper bg-soft-primary">
-      <div class="container py-14 py-md-16 text-center">
-        <h2 class="display-5 mb-7">Une idée de cas d'usage IA ?</h2>
-        <p class="lead fs-lg mb-7">On vous aide à valider sa faisabilité et son ROI en quelques semaines.</p>
-        <a href="/fr/contact" class="btn btn-lg btn-primary rounded-pill">Lancer la conversation</a>
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">Lancez votre POC</p>
+            <h2 class="i91-cta-section-title">Une idée de cas d'usage IA ?</h2>
+            <a href="/fr/contact" class="i91-cta-section-btn">Lancer la conversation <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 
