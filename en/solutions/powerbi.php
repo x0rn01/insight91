@@ -37,7 +37,7 @@ include(__DIR__ . '/../../shared/head.php');
           <div class="col-lg-6 position-relative">
             <div class="shape bg-line leaf rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; right: -0.6rem;"></div>
             <div class="shape bg-pale-violet rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; left: -0.4rem;"></div>
-            <figure class="rounded mb-0 hover-scale"><img src="/assets/img/photos/powerbi1.webp" alt=""></figure>
+            <figure class="rounded mb-0 hover-scale"><img src="/assets/img/photos/powerbi1.webp" loading="lazy" alt=""></figure>
           </div>
           <!--/column -->
           <div class="col-lg-6">

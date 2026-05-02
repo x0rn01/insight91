@@ -70,7 +70,7 @@ include(__DIR__ . '/../../shared/head.php');
             </ul>
           </div>
           <div class="col-lg-6 position-relative">
-            <figure class="rounded"><img src="/assets/img/photos/data-screen.webp" alt="Track record" /></figure>
+            <figure class="rounded"><img src="/assets/img/photos/data-screen.webp" loading="lazy" alt="Track record" /></figure>
           </div>
         </div>
       </div>

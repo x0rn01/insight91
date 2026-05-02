@@ -32,7 +32,7 @@ include(__DIR__ . '/../../shared/head.php');
 
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div class="col-lg-6 order-lg-2">
-            <figure class="rounded mb-0"><img src="/assets/img/photos/business1.webp" alt="Odoo en action"></figure>
+            <figure class="rounded mb-0"><img src="/assets/img/photos/business1.webp" loading="lazy" alt="Odoo en action"></figure>
           </div>
           <div class="col-lg-6">
             <h2 class="display-4 mb-4">Une plateforme, tous vos métiers</h2>
@@ -130,7 +130,7 @@ include(__DIR__ . '/../../shared/head.php');
             <a href="/fr/services/erp" class="btn btn-primary rounded-pill mt-3">En savoir plus sur notre approche</a>
           </div>
           <div class="col-lg-6">
-            <figure class="rounded"><img src="/assets/img/photos/business5.webp" alt="Odoo PME" /></figure>
+            <figure class="rounded"><img src="/assets/img/photos/business5.webp" loading="lazy" alt="Odoo PME" /></figure>
           </div>
         </div>
       </div>
