@@ -2,7 +2,7 @@
 title: "Peppol mandatory: what changes for your Belgian SMB since January 1st"
 date: 2026-01-12
 excerpt: "Since January 1st, 2026, all Belgian VAT-registered businesses must issue and receive their B2B invoices via the Peppol network. Here's how Odoo handles it (for free) and what you need to check."
-cover: "/assets/img/photos/data-screen.webp"
+cover: "/assets/img/blog/peppol.webp"
 tags: [odoo, invoicing, peppol, compliance]
 ---
 

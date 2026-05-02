@@ -2,7 +2,7 @@
 title: "Odoo 19 : l'IA débarque vraiment dans l'ERP"
 date: 2025-09-23
 excerpt: "Odoo Experience 2025 vient de se terminer. La version 19 met l'intelligence artificielle au cœur de la plateforme — agents conversationnels, recherche en langage naturel, transcription voix. Tour d'horizon."
-cover: "/assets/img/photos/services/ia.webp"
+cover: "/assets/img/blog/odoo-experience.webp"
 tags: [odoo, IA, release]
 ---
 

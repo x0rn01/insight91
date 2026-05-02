@@ -2,7 +2,7 @@
 title: "Odoo 18: key takeaways from the new release"
 date: 2024-10-22
 excerpt: "Odoo 18 was unveiled at Odoo Experience in Brussels. Predictive AI, Dispatch Management, mobile redesign and new vertical modules — a clear push toward enterprise."
-cover: "/assets/img/photos/services/erp.webp"
+cover: "/assets/img/blog/odoo-18.webp"
 tags: [odoo, release]
 ---
 

@@ -2,7 +2,7 @@
 title: "Peppol obligatoire : ce qui change pour votre PME belge depuis le 1er janvier"
 date: 2026-01-12
 excerpt: "Depuis le 1er janvier 2026, toutes les entreprises belges assujetties à la TVA doivent émettre et recevoir leurs factures B2B via le réseau Peppol. Voici comment Odoo gère ça (gratuitement) et ce que vous devez vérifier."
-cover: "/assets/img/photos/data-screen.webp"
+cover: "/assets/img/blog/peppol.webp"
 tags: [odoo, facturation, peppol, conformité]
 ---
 

@@ -2,7 +2,7 @@
 title: "Odoo 18 : ce qu'il faut retenir de la nouvelle version"
 date: 2024-10-22
 excerpt: "Odoo 18 a été dévoilé lors d'Odoo Experience à Bruxelles. IA prédictive, Dispatch Management, refonte mobile et nouveaux modules métier — un cap clair vers l'enterprise."
-cover: "/assets/img/photos/services/erp.webp"
+cover: "/assets/img/blog/odoo-18.webp"
 tags: [odoo, release]
 ---
 
