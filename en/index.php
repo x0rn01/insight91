@@ -6,7 +6,7 @@ $currentPage = 'index';
 include(__DIR__ . '/../shared/head.php');
 ?>
 <body data-theme="light">
-  <div class="content-wrapper">
+  <div class="content-wrapper" role="main">
 
     <?php
     $navbar = 'navbar-light';
@@ -76,7 +76,7 @@ include(__DIR__ . '/../shared/head.php');
           </div>
           <!--/column -->
           <div class="col-lg-6">
-            <h3 id="empower_business" class="display-4 mb-5">Empower your business with cutting-edge BI solutions</h3>
+            <h2 id="empower_business" class="display-4 mb-5">Empower your business with cutting-edge BI solutions</h2>
             <p id="unlock_potential" class="mb-3">Unlock the full potential of your data, fostering a culture of data literacy within your organization and dive into a transformative journey towards becoming a truly data-driven company.</p>
             <p id="actionable_insights" class="mb-7"> Explore how actionable insights can drive informed decision-making, ensuring your business stays ahead in today's dynamic landscape. </p>
 
@@ -475,8 +475,8 @@ include(__DIR__ . '/../shared/head.php');
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-  <script src="/assets/js/plugins.js"></script>
-  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/plugins.js" defer></script>
+  <script src="/assets/js/theme.js" defer></script>
 
 </body>
 

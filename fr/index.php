@@ -6,7 +6,7 @@ $currentPage = 'index';
 include(__DIR__ . '/../shared/head.php');
 ?>
 <body data-theme="light">
-  <div class="content-wrapper">
+  <div class="content-wrapper" role="main">
 
     <?php
     $navbar = 'navbar-light';
@@ -76,7 +76,7 @@ include(__DIR__ . '/../shared/head.php');
           </div>
           <!--/column -->
           <div class="col-lg-6">
-            <h3 class="display-4 mb-5">Créez des stratégies de BI pour moderniser votre entreprise</h3>
+            <h2 class="display-4 mb-5">Créez des stratégies de BI pour moderniser votre entreprise</h2>
             <p class="mb-3">Libérez le potentiel infini de vos données, créez une culture de la littératie des données parmi vos employés, et initiez un voyage visionnaire pour faire de votre entreprise une véritable entreprise guidée par les données.</p>
             <p class="mb-7">Découvrez comment les informations exploitables permettent de guider les décisions et à maintenir votre organisation comme le leader dans le monde bruyant et turbulent d'aujourd'hui.</p>
             <!--/.row -->
@@ -486,8 +486,8 @@ include(__DIR__ . '/../shared/head.php');
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-  <script src="/assets/js/plugins.js"></script>
-  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/plugins.js" defer></script>
+  <script src="/assets/js/theme.js" defer></script>
 
 </body>
 

@@ -69,6 +69,15 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
 
     <!-- Insight 91 overrides -->
     <style>
+      /* Darker primary for WCAG AA contrast (4.5:1). The aqua palette default
+         #54a8c7 only hits 2.69:1 on white, failing accessibility. */
+      :root {
+        --bs-primary: #0a74aa;
+        --bs-primary-rgb: 10, 116, 170;
+      }
+      /* Override muted gray that also fails contrast (#aab0bc → #6c757d) */
+      .text-muted { color: #5a6268 !important; }
+
       /* Stronger dark overlay for heroes that use light background photos
          (default bg-overlay is only 50% black, not enough on light images). */
       .image-wrapper.i91-overlay-strong::before {

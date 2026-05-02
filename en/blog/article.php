@@ -14,7 +14,7 @@ if (!$post) {
     include(__DIR__ . '/../../shared/head.php');
     ?>
     <body>
-      <div class="content-wrapper">
+      <div class="content-wrapper" role="main">
         <?php $navbar = 'navbar-light'; $logo = 'logo-dark'; include(__DIR__ . '/../../shared/header.php'); ?>
         <section class="wrapper bg-light">
           <div class="container py-20 text-center">
@@ -25,8 +25,8 @@ if (!$post) {
         </section>
       </div>
       <?php include(__DIR__ . '/../../shared/footer.php'); ?>
-      <script src="/assets/js/plugins.js"></script>
-      <script src="/assets/js/theme.js"></script>
+      <script src="/assets/js/plugins.js" defer></script>
+      <script src="/assets/js/theme.js" defer></script>
     </body>
     </html>
     <?php
@@ -40,7 +40,7 @@ $currentPage = 'blog/' . $post['slug'];
 include(__DIR__ . '/../../shared/head.php');
 ?>
 <body>
-  <div class="content-wrapper">
+  <div class="content-wrapper" role="main">
     <?php $navbar = 'navbar-dark'; $logo = 'logo-light'; include(__DIR__ . '/../../shared/header.php'); ?>
 
     <section class="wrapper image-wrapper bg-cover bg-image bg-overlay i91-overlay-strong" data-image-src="<?php echo !empty($post['cover']) ? htmlspecialchars($post['cover']) : '/assets/img/photos/business.avif'; ?>">
@@ -81,7 +81,7 @@ include(__DIR__ . '/../../shared/head.php');
 
   <?php include(__DIR__ . '/../../shared/footer.php'); ?>
   <div class="progress-wrap"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg></div>
-  <script src="/assets/js/plugins.js"></script>
-  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/plugins.js" defer></script>
+  <script src="/assets/js/theme.js" defer></script>
 </body>
 </html>

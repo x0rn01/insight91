@@ -6,7 +6,7 @@ $currentPage = 'services/erp';
 include(__DIR__ . '/../../shared/head.php');
 ?>
 <body>
-  <div class="content-wrapper">
+  <div class="content-wrapper" role="main">
     <?php
         $navbar = 'navbar-dark';
         $logo = 'logo-light';
@@ -272,7 +272,7 @@ include(__DIR__ . '/../../shared/head.php');
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-  <script src="/assets/js/plugins.js"></script>
-  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/plugins.js" defer></script>
+  <script src="/assets/js/theme.js" defer></script>
 </body>
 </html>
