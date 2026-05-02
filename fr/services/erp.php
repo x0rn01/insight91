@@ -185,8 +185,7 @@ include(__DIR__ . '/../../shared/head.php');
         flex-shrink: 0;
         width: 88px; height: 88px;
         border-radius: 50%;
-        background: var(--bs-primary);
-        background-image: linear-gradient(135deg, rgba(255,255,255,.18), transparent 60%);
+        background: var(--i91-gradient);
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -216,18 +215,256 @@ include(__DIR__ . '/../../shared/head.php');
       }
     </style>
 
-    <!-- DOMAINES COUVERTS -->
-    <section class="wrapper bg-soft-primary">
+    <!-- NOS SERVICES (7 prestations détaillées) -->
+    <section class="wrapper bg-light">
       <div class="container py-14 py-md-16">
-        <h2 class="fs-16 text-uppercase text-muted mb-3 text-center">Domaines couverts</h2>
-        <h3 class="display-5 mb-10 text-center">Un ERP qui couvre tout votre métier</h3>
-        <div class="row gx-lg-8 gx-xl-12 gy-6">
-          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-money-bill text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">Finance &amp; Comptabilité</h4><p class="mb-0">Compta belge, TVA, lettrage automatique, états financiers, reporting.</p></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-shopping-cart text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">Ventes &amp; CRM</h4><p class="mb-0">Devis, commandes, factures, suivi pipeline, abonnements.</p></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-package text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">Stocks &amp; Achats</h4><p class="mb-0">Gestion multi-entrepôts, réapprovisionnement, traçabilité.</p></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-users-alt text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">RH &amp; Paie</h4><p class="mb-0">Recrutement, congés, notes de frais, intégration sociale.</p></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-shop text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">E-commerce &amp; POS</h4><p class="mb-0">Site marchand, caisse en boutique, sync stocks unifiée.</p></div></div></div>
-          <div class="col-md-6 col-lg-4"><div class="d-flex flex-row"><div><i class="uil uil-cog text-primary fs-30 me-3"></i></div><div><h4 class="mb-1">Production &amp; MRP</h4><p class="mb-0">Nomenclatures, ordres de fabrication, planification.</p></div></div></div>
+        <div class="text-center mb-13">
+          <h2 class="fs-16 text-uppercase text-muted mb-3">Nos prestations</h2>
+          <h3 class="display-5 mb-3">Sept services pour piloter votre projet Odoo</h3>
+          <p class="lead fs-lg mx-auto" style="max-width:680px;color:#4d5862;">De la phase de conception à la maintenance long terme, en passant par les développements spécifiques et la montée en compétence de vos équipes.</p>
+        </div>
+
+        <div class="i91-srv-list">
+
+          <!-- 1 — Conception -->
+          <article class="i91-srv">
+            <div class="i91-srv-visual">
+              <span class="i91-srv-num">01</span>
+              <i class="uil uil-clipboard-notes"></i>
+            </div>
+            <div class="i91-srv-content">
+              <h3>Conception de solution</h3>
+              <p>Un ERP qui ne reflète pas vos processus métiers est un poids, pas un levier. La phase de conception, c'est ce qui transforme Odoo en solution alignée avec vos objectifs et votre écosystème IT existant.</p>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Pour qui</p>
+                <ul>
+                  <li>Entreprises qui découvrent Odoo et veulent cadrer leur projet</li>
+                  <li>Organisations qui migrent depuis un autre ERP (Sage, Cegid, Bob, etc.)</li>
+                  <li>PME en transformation digitale avec une vision multi-année</li>
+                </ul>
+              </div>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Notre approche</p>
+                <ul>
+                  <li>Analyse <b>AS-IS</b> de l'existant et définition <b>TO-BE</b> ciblée</li>
+                  <li>Modélisation des workflows et des interactions entre outils</li>
+                  <li>Workshops collaboratifs avec vos équipes métier</li>
+                  <li>Recommandations d'architecture et planning chiffré (effort + ROI)</li>
+                </ul>
+              </div>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Objectif</p>
+                <p>Démarrer avec une vision claire, optimisée et intégrée à votre environnement, plutôt que de naviguer à vue.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 — Déploiement -->
+          <article class="i91-srv reverse">
+            <div class="i91-srv-visual">
+              <span class="i91-srv-num">02</span>
+              <i class="uil uil-rocket"></i>
+            </div>
+            <div class="i91-srv-content">
+              <h3>Déploiement &amp; intégration</h3>
+              <p>Un ERP doit fonctionner dès le premier jour, sans perte de données et sans perturbation de votre activité. C'est le métier du déploiement&nbsp;: chaque paramètre, chaque flux, chaque automatisation, optimisé pour un fonctionnement fluide.</p>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Pour qui</p>
+                <ul>
+                  <li>Organisations avec un cahier des charges clair, prêtes à exécuter</li>
+                  <li>PME et grands comptes recherchant un déploiement structuré et rapide</li>
+                </ul>
+              </div>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Notre approche</p>
+                <ul>
+                  <li>Installation, configuration, personnalisation des modules Odoo</li>
+                  <li>Migration sécurisée des données depuis vos systèmes existants</li>
+                  <li>Intégration avec vos outils en place (CRM, e-commerce, logistique, BI)</li>
+                  <li>Tests fonctionnels approfondis et accompagnement go-live</li>
+                </ul>
+              </div>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Objectif</p>
+                <p>Un Odoo prêt à l'emploi, parfaitement intégré, optimisé pour vos équipes.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 — Développement personnalisé -->
+          <article class="i91-srv">
+            <div class="i91-srv-visual">
+              <span class="i91-srv-num">03</span>
+              <i class="uil uil-code-branch"></i>
+            </div>
+            <div class="i91-srv-content">
+              <h3>Développement personnalisé</h3>
+              <p>Chaque entreprise a des besoins uniques. Quand le standard Odoo ne suffit pas, nous développons des modules sur mesure qui s'intègrent proprement, sans rendre votre instance ingérable lors des montées de version.</p>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Pour qui</p>
+                <ul>
+                  <li>Organisations avec des processus spécifiques non couverts par le standard</li>
+                  <li>PME en forte croissance qui automatisent leurs flux métiers</li>
+                  <li>Entreprises intégrant Odoo dans un écosystème IT complexe</li>
+                </ul>
+              </div>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Ce que nous faisons</p>
+                <ul>
+                  <li>Modules Odoo dédiés à votre métier</li>
+                  <li>Automatisation avancée des workflows et règles de gestion</li>
+                  <li>Connecteurs e-commerce, WMS, finance, logistique sur mesure</li>
+                  <li>Personnalisation des interfaces et fonctionnalités existantes</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 — Formation -->
+          <article class="i91-srv reverse">
+            <div class="i91-srv-visual">
+              <span class="i91-srv-num">04</span>
+              <i class="uil uil-graduation-cap"></i>
+            </div>
+            <div class="i91-srv-content">
+              <h3>Formation &amp; conduite du changement</h3>
+              <p>Le meilleur ERP du monde ne sert à rien si vos utilisateurs ne se l'approprient pas. L'adoption se construit&nbsp;: avec des sessions calibrées par profil, des supports adaptés à votre métier, et un accompagnement sur les premières semaines critiques.</p>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Pour qui</p>
+                <ul>
+                  <li>Organisations qui veulent un déploiement réussi (pas juste fini)</li>
+                  <li>Équipes métier qui ont besoin de formations <i>concrètes</i>, pas de démos génériques</li>
+                  <li>PME qui cherchent à développer une autonomie interne</li>
+                </ul>
+              </div>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Ce que nous faisons</p>
+                <ul>
+                  <li>Modèle <b>"former le formateur"</b> pour créer des relais internes</li>
+                  <li>Sessions sur mesure ancrées dans vos processus réels</li>
+                  <li>Base de connaissance interne&nbsp;: guides rapides, captures, astuces</li>
+                  <li>Coaching post go-live pendant les premières semaines critiques</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 — Maintenance -->
+          <article class="i91-srv">
+            <div class="i91-srv-visual">
+              <span class="i91-srv-num">05</span>
+              <i class="uil uil-shield-check"></i>
+            </div>
+            <div class="i91-srv-content">
+              <h3>Maintenance &amp; évolution</h3>
+              <p>Un ERP doit évoluer avec votre entreprise. Notre support continu garantit que votre Odoo reste stable, sécurisé et aligné avec vos objectifs — sans surprise, sans interruption.</p>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Pour qui</p>
+                <ul>
+                  <li>Organisations qui visent la performance long terme</li>
+                  <li>Équipes qui veulent un support expert et de l'amélioration continue</li>
+                  <li>PME qui font évoluer leur configuration au fil de leur croissance</li>
+                </ul>
+              </div>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Ce que nous faisons</p>
+                <ul>
+                  <li>Équipe support dédiée avec ticketing structuré et SLA clairs</li>
+                  <li>Optimisations régulières et recommandations de nouvelles features</li>
+                  <li>Conseils proactifs sur les montées de version et la scalabilité</li>
+                  <li>Accès à notre <b>Contrat d'Évolution</b> pour la sérénité long terme</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 — Upgrade -->
+          <article class="i91-srv reverse">
+            <div class="i91-srv-visual">
+              <span class="i91-srv-num">06</span>
+              <i class="uil uil-arrow-circle-up"></i>
+            </div>
+            <div class="i91-srv-content">
+              <h3>Mise à niveau Odoo</h3>
+              <p>Les nouvelles versions d'Odoo apportent des améliorations significatives — IA prédictive, dispatch logistique, performance — mais une migration mérite d'être préparée. On planifie, on teste, on bascule en douceur.</p>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Pour qui</p>
+                <ul>
+                  <li>Entreprises sur Odoo 16 ou antérieur, hors fenêtre de support</li>
+                  <li>Organisations qui veulent profiter des dernières features (IA, mobile)</li>
+                  <li>Sociétés avec des modules custom qui demandent une migration sécurisée</li>
+                </ul>
+              </div>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Ce que nous faisons</p>
+                <ul>
+                  <li>Audit technique et fonctionnel de votre configuration actuelle</li>
+                  <li>Path de migration adapté à votre code et à vos enjeux métier</li>
+                  <li>Tests de compatibilité et validation avant bascule</li>
+                  <li>Optimisation post-upgrade et ré-adoption utilisateur</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 — Audit -->
+          <article class="i91-srv">
+            <div class="i91-srv-visual">
+              <span class="i91-srv-num">07</span>
+              <i class="uil uil-search-alt"></i>
+            </div>
+            <div class="i91-srv-content">
+              <h3>Audit ERP</h3>
+              <p>Un Odoo mal configuré peut devenir un frein plutôt qu'un accélérateur. Notre audit identifie les failles, optimise les processus, et sécurise votre instance — avec un plan d'action priorisé à la clé.</p>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Pour qui</p>
+                <ul>
+                  <li>Entreprises déjà sur Odoo qui veulent une évaluation complète</li>
+                  <li>Organisations ayant travaillé avec un autre intégrateur, en quête d'une analyse indépendante</li>
+                  <li>Sociétés qui veulent renforcer sécurité, performance et adoption</li>
+                </ul>
+              </div>
+              <div class="i91-srv-block">
+                <p class="i91-srv-block-label">Ce que nous faisons</p>
+                <ul>
+                  <li>Analyse technique et fonctionnelle&nbsp;: configuration, performance, flux</li>
+                  <li>Évaluation sécurité&nbsp;: permissions, accès critiques, conformité</li>
+                  <li>Audit d'adoption&nbsp;: usage réel et zones d'amélioration</li>
+                  <li>Recommandations priorisées avec plan d'action chiffré</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRAT D'ÉVOLUTION -->
+    <section class="wrapper bg-light">
+      <div class="container pb-14 pb-md-16">
+        <div class="i91-callout">
+          <span class="i91-callout-eyebrow">Support long terme</span>
+          <h2>Le Contrat d'Évolution</h2>
+          <p>Un ERP performant ne s'arrête pas à sa mise en place. Odoo évolue, votre entreprise aussi&nbsp;— notre contrat garantit que votre instance reste alignée, sécurisée et toujours en avance d'un pas.</p>
+          <div class="i91-callout-grid">
+            <div class="i91-callout-feat">
+              <i class="uil uil-headphones-alt"></i>
+              <h4>Support réactif</h4>
+              <p>Questions, bugs, ajustements&nbsp;— une équipe dédiée et un ticketing structuré.</p>
+            </div>
+            <div class="i91-callout-feat">
+              <i class="uil uil-sync"></i>
+              <h4>Updates inclus</h4>
+              <p>Montées de version et patchs de sécurité, sans frais surprise.</p>
+            </div>
+            <div class="i91-callout-feat">
+              <i class="uil uil-chart-line"></i>
+              <h4>Optimisations continues</h4>
+              <p>Monitoring proactif et recommandations régulières d'évolution.</p>
+            </div>
+          </div>
+          <a href="/fr/contact" class="btn btn-light rounded-pill">Découvrir le contrat <i class="uil uil-arrow-right ms-1"></i></a>
         </div>
       </div>
     </section>

@@ -69,14 +69,184 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
 
     <!-- Insight 91 overrides -->
     <style>
-      /* Darker primary for WCAG AA contrast (4.5:1). The aqua palette default
-         #54a8c7 only hits 2.69:1 on white, failing accessibility. */
+      /* Darker primary for WCAG AA contrast + brand gradient palette */
       :root {
         --bs-primary: #0a74aa;
         --bs-primary-rgb: 10, 116, 170;
+        /* Brand gradient — blue → teal-green */
+        --i91-c1: #0a74aa;
+        --i91-c2: #0c8bcc;
+        --i91-c3: #0d97dd;
+        --i91-c4: #0dddb1;
+        --i91-c5: #0ccca3;
+        --i91-c6: #0aaa88;
+        --i91-gradient: linear-gradient(135deg, #0a74aa 0%, #0d97dd 50%, #0dddb1 100%);
       }
       /* Override muted gray that also fails contrast (#aab0bc → #6c757d) */
       .text-muted { color: #5a6268 !important; }
+
+      /* ===== Services detail blocks (alternating image/content) ===== */
+      .i91-srv-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+      }
+      .i91-srv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+      .i91-srv.reverse > .i91-srv-visual { order: 2; }
+      .i91-srv-visual {
+        position: relative;
+        aspect-ratio: 1 / 1;
+        border-radius: 24px;
+        background: var(--i91-gradient);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        box-shadow: 0 30px 60px -20px rgba(15,18,24,.18);
+      }
+      .i91-srv-visual::after {
+        content: '';
+        position: absolute; inset: 0;
+        background-image:
+          radial-gradient(circle at 20% 30%, rgba(255,255,255,.18) 0%, transparent 35%),
+          radial-gradient(circle at 80% 70%, rgba(255,255,255,.1) 0%, transparent 45%);
+        pointer-events: none;
+      }
+      .i91-srv-visual i {
+        font-size: 6rem;
+        color: rgba(255,255,255,.95);
+        position: relative;
+        z-index: 1;
+      }
+      .i91-srv-num {
+        position: absolute;
+        top: 1.25rem; left: 1.5rem;
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: rgba(255,255,255,.55);
+        letter-spacing: .05em;
+        z-index: 2;
+      }
+      .i91-srv-content h3 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+      .i91-srv-content > p {
+        color: #4d5862;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .i91-srv-block { margin-bottom: 1.25rem; }
+      .i91-srv-block-label {
+        font-size: .7rem;
+        font-weight: 700;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        color: var(--bs-primary);
+        margin-bottom: .5rem;
+      }
+      .i91-srv-block ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .i91-srv-block li {
+        position: relative;
+        padding-left: 1.25rem;
+        margin-bottom: .35rem;
+        color: #4d5862;
+        font-size: .94rem;
+        line-height: 1.5;
+      }
+      .i91-srv-block li::before {
+        content: '';
+        position: absolute;
+        left: 0; top: .55em;
+        width: .35rem; height: .35rem;
+        background: var(--bs-primary);
+        border-radius: 50%;
+      }
+      .i91-srv-block p { color: #4d5862; font-size: .94rem; line-height: 1.5; margin: 0; }
+      @media (max-width: 991.98px) {
+        .i91-srv-list { gap: 3rem; }
+        .i91-srv {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        .i91-srv.reverse > .i91-srv-visual { order: 0; }
+        .i91-srv-visual { aspect-ratio: 16 / 10; max-height: 240px; }
+        .i91-srv-visual i { font-size: 3.5rem; }
+        .i91-srv-content h3 { font-size: 1.35rem; }
+      }
+
+      /* ===== Highlight callout block (Contrat d'évolution) ===== */
+      .i91-callout {
+        position: relative;
+        border-radius: 28px;
+        padding: 3rem 3rem;
+        background: var(--i91-gradient);
+        color: #fff;
+        overflow: hidden;
+      }
+      .i91-callout::before {
+        content: '';
+        position: absolute;
+        top: -100px; right: -100px;
+        width: 350px; height: 350px;
+        background: radial-gradient(circle, rgba(255,255,255,.18) 0%, transparent 60%);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .i91-callout > * { position: relative; z-index: 1; }
+      .i91-callout-eyebrow {
+        display: inline-block;
+        padding: .35rem .85rem;
+        font-size: .7rem;
+        font-weight: 700;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        background: rgba(255,255,255,.2);
+        color: #fff;
+        border-radius: 999px;
+        margin-bottom: 1.25rem;
+      }
+      .i91-callout h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+      .i91-callout p { font-size: 1.05rem; line-height: 1.6; opacity: .95; margin-bottom: 1.5rem; }
+      .i91-callout-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .i91-callout-feat {
+        padding: 1.25rem;
+        background: rgba(255,255,255,.12);
+        backdrop-filter: blur(4px);
+        border-radius: 14px;
+      }
+      .i91-callout-feat i { font-size: 1.5rem; margin-bottom: .5rem; display: block; }
+      .i91-callout-feat h4 { font-size: 1rem; font-weight: 700; margin-bottom: .35rem; color: #fff; }
+      .i91-callout-feat p { font-size: .85rem; line-height: 1.45; opacity: .9; margin: 0; }
+      @media (max-width: 767.98px) {
+        .i91-callout { padding: 2rem 1.5rem; border-radius: 20px; }
+        .i91-callout::before { width: 220px; height: 220px; top: -60px; right: -60px; }
+        .i91-callout h2 { font-size: 1.5rem; }
+        .i91-callout-grid { grid-template-columns: 1fr; gap: .75rem; }
+        .i91-callout-feat { padding: 1rem; }
+      }
 
       /* Stronger dark overlay for heroes that use light background photos
          (default bg-overlay is only 50% black, not enough on light images). */
@@ -110,12 +280,11 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
         font-weight: 600;
         line-height: 1;
         color: #fff !important;
-        background: var(--bs-primary);
-        background-image: linear-gradient(135deg, var(--bs-primary) 0%, rgba(0,0,0,.18) 100%);
+        background: var(--i91-gradient);
         border: none;
         border-radius: 999px;
         box-shadow:
-          0 12px 28px -6px rgba(var(--bs-primary-rgb), .55),
+          0 12px 28px -6px rgba(var(--bs-primary-rgb), .45),
           0 4px 12px rgba(15,18,24,.10);
         text-decoration: none;
         transition: transform .25s ease, box-shadow .25s ease, gap .25s ease;
