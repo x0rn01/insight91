@@ -125,6 +125,77 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
       .i91-cta i { font-size: 1.15rem; line-height: 1; }
       .i91-cta-block { display: flex; width: 100%; }   /* full-width variant */
 
+      /* ==== Mobile editorial hero ==== */
+      .i91-m-hero { padding-top: 1rem; }
+      .i91-m-hero-blob {
+        position: absolute;
+        top: -120px; right: -120px;
+        width: 340px; height: 340px;
+        background: radial-gradient(circle,
+          rgba(var(--bs-primary-rgb), .22) 0%,
+          rgba(var(--bs-primary-rgb), .05) 50%,
+          transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .i91-eyebrow {
+        display: inline-block;
+        padding: .4rem .9rem;
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: var(--bs-primary);
+        background: rgba(var(--bs-primary-rgb), .12);
+        border-radius: 999px;
+        margin-bottom: 1.5rem;
+      }
+      .i91-m-hero-title {
+        font-size: 2.4rem;
+        font-weight: 800;
+        line-height: 1.08;
+        letter-spacing: -0.01em;
+        color: #0f1218;
+      }
+      @media (max-width: 374px) {
+        .i91-m-hero-title { font-size: 2rem; }
+      }
+      .i91-highlight {
+        display: inline-block;
+        padding: 0 .15em;
+        background: linear-gradient(180deg, transparent 55%, rgba(var(--bs-primary-rgb), .28) 55%);
+      }
+      .i91-m-hero-sub {
+        font-size: 1.05rem;
+        line-height: 1.55;
+        color: #4d5862;
+      }
+      .i91-trust-strip {
+        padding-top: 1.4rem;
+        border-top: 1px solid rgba(15,18,24,.08);
+      }
+      .i91-trust-label {
+        font-size: .72rem;
+        font-weight: 700;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: rgba(15,18,24,.45);
+        margin-bottom: .6rem;
+      }
+      .i91-trust-logos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem .65rem;
+        align-items: center;
+        font-weight: 600;
+        color: rgba(15,18,24,.7);
+      }
+      .i91-trust-logos > span:nth-child(odd) { /* names */ }
+      .i91-trust-logos > span:nth-child(even) { /* separators */
+        color: rgba(15,18,24,.25);
+      }
+
       /* Header logo — cap height (logo SVG was tightly cropped, default sizing was too large) */
       .navbar .logo-header {
         max-height: 72px !important;

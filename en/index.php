@@ -30,16 +30,26 @@ include(__DIR__ . '/../shared/head.php');
       </div>
     </section>
 
-    <!-- Hero mobile (clean text + bullets, <lg) -->
-    <section class="d-lg-none wrapper bg-light">
-      <div class="container pt-13 pb-10">
-        <h1 class="display-2 mb-7">Your data, your ERP, your AI — steered together</h1>
-        <ul class="icon-list bullet-bg bullet-soft-primary mb-8">
-          <li><span><i class="uil uil-check"></i></span><span>Data, ERP &amp; AI — three expertises under one roof.</span></li>
-          <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Official Odoo partner for SMBs.</span></li>
-          <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Hands-on track record with large groups (Ethias, Securex, Rolls Royce).</span></li>
-        </ul>
+    <!-- Hero mobile (editorial layout, <lg) -->
+    <section class="d-lg-none wrapper bg-light position-relative overflow-hidden i91-m-hero">
+      <div class="i91-m-hero-blob"></div>
+      <div class="container pt-13 pb-10 position-relative">
+        <span class="i91-eyebrow">Data · ERP · AI Partner</span>
+        <h1 class="i91-m-hero-title mb-5">
+          Your data.<br>
+          Your ERP.<br>
+          Your <span class="i91-highlight">AI</span>.
+        </h1>
+        <p class="i91-m-hero-sub mb-8">Steered together. One team, three complementary axes for SMBs and larger organizations.</p>
         <a href="/en/contact" class="i91-cta i91-cta-block">Contact Us <i class="uil uil-arrow-right"></i></a>
+        <div class="i91-trust-strip mt-10">
+          <p class="i91-trust-label">Trusted by</p>
+          <div class="i91-trust-logos">
+            <span>Ethias</span><span>·</span>
+            <span>Securex</span><span>·</span>
+            <span>Rolls Royce</span>
+          </div>
+        </div>
       </div>
     </section>
     <section id="snippet-1" class="wrapper bg-light">

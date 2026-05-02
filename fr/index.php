@@ -30,16 +30,26 @@ include(__DIR__ . '/../shared/head.php');
       </div>
     </section>
 
-    <!-- Hero mobile (clean text + bullets, <lg) -->
-    <section class="d-lg-none wrapper bg-light">
-      <div class="container pt-13 pb-10">
-        <h1 class="display-2 mb-7">Vos données, votre ERP, votre IA — pilotés ensemble</h1>
-        <ul class="icon-list bullet-bg bullet-soft-primary mb-8">
-          <li><span><i class="uil uil-check"></i></span><span>Data, ERP &amp; IA — trois expertises sous un même toit.</span></li>
-          <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Partenaire Odoo officiel pour les PME.</span></li>
-          <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Expertise éprouvée auprès de grands groupes (Ethias, Securex, Rolls Royce).</span></li>
-        </ul>
+    <!-- Hero mobile (editorial layout, <lg) -->
+    <section class="d-lg-none wrapper bg-light position-relative overflow-hidden i91-m-hero">
+      <div class="i91-m-hero-blob"></div>
+      <div class="container pt-13 pb-10 position-relative">
+        <span class="i91-eyebrow">Partenaire Data · ERP · IA</span>
+        <h1 class="i91-m-hero-title mb-5">
+          Vos données.<br>
+          Votre ERP.<br>
+          Votre <span class="i91-highlight">IA</span>.
+        </h1>
+        <p class="i91-m-hero-sub mb-8">Pilotés ensemble. Une équipe, trois axes complémentaires pour PME et grandes organisations.</p>
         <a href="/fr/contact" class="i91-cta i91-cta-block">Contactez-nous <i class="uil uil-arrow-right"></i></a>
+        <div class="i91-trust-strip mt-10">
+          <p class="i91-trust-label">Ils nous font confiance</p>
+          <div class="i91-trust-logos">
+            <span>Ethias</span><span>·</span>
+            <span>Securex</span><span>·</span>
+            <span>Rolls Royce</span>
+          </div>
+        </div>
       </div>
     </section>
     <section id="snippet-1" class="wrapper bg-light">
