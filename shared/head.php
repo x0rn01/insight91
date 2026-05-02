@@ -77,8 +77,6 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
       }
       /* Override muted gray that also fails contrast (#aab0bc → #6c757d) */
       .text-muted { color: #5a6268 !important; }
-      /* Footer is dark — override muted text to a light gray for AA contrast */
-      footer .text-muted { color: #cfd5dc !important; }
 
       /* Stronger dark overlay for heroes that use light background photos
          (default bg-overlay is only 50% black, not enough on light images). */

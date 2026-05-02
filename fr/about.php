@@ -34,7 +34,7 @@ include(__DIR__ . '/../shared/head.php');
             <p class="mb-0">Notre approche : comprendre votre métier en profondeur, sélectionner les technologies qui correspondent à votre contexte, et accompagner vos équipes jusqu'à l'autonomie.</p>
           </div>
           <div class="col-lg-6">
-            <figure class="rounded"><img src="/assets/img/photos/about-1.webp" width="2048" height="1265"/></figure>
+            <figure class="rounded"><img src="/assets/img/photos/about-1.webp" loading="lazy" alt="Notre mission" /></figure>
           </div>
         </div>
       </div>

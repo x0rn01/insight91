@@ -40,7 +40,7 @@ include(__DIR__ . '/../../shared/head.php');
           <div class="col-lg-6 text-center">
             <div class="card border-0 shadow-lg p-10">
               <div class="card-body text-center">
-                <img src="/assets/img/brands/odoo-partner.webp" width="317" height="159"/>
+                <img src="/assets/img/brands/odoo-partner.webp" loading="lazy" alt="Odoo Official Partner" class="img-fluid" style="max-height: 140px;" />
               </div>
             </div>
           </div>
@@ -236,7 +236,7 @@ include(__DIR__ . '/../../shared/head.php');
               <li class="mt-3"><span><i class="uil uil-check"></i></span><span><b>Multi-sector SMBs</b> — tailored solutions</span></li>
             </ul>
           </div>
-          <div class="col-lg-6"><figure class="rounded"><img src="/assets/img/photos/business4.webp" width="3008" height="2177"/></figure></div>
+          <div class="col-lg-6"><figure class="rounded"><img src="/assets/img/photos/business4.webp" loading="lazy" alt="ERP track record" /></figure></div>
         </div>
       </div>
     </section>

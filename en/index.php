@@ -56,11 +56,11 @@ include(__DIR__ . '/../shared/head.php');
               <div class="col-md-6">
                 <div class="row gx-md-5 gy-5">
                   <div class="col-md-10 offset-md-2">
-                    <figure class="rounded"><img src="/assets/img/photos/crop-1.webp" width="2572" height="2773"></figure>
+                    <figure class="rounded"><img src="/assets/img/photos/crop-1.webp" loading="lazy" alt="BI"></figure>
                   </div>
                   <!--/column -->
                   <div class="col-md-12">
-                    <figure class="rounded"><img src="/assets/img/photos/crop-2.webp" width="784" height="662"></figure>
+                    <figure class="rounded"><img src="/assets/img/photos/crop-2.webp" loading="lazy" alt="BI"></figure>
                   </div>
                   <!--/column -->
                 </div>
@@ -68,7 +68,7 @@ include(__DIR__ . '/../shared/head.php');
               </div>
               <!--/column -->
               <div class="col-md-6">
-                <figure class="rounded"><img src="/assets/img/photos/crop-3.webp" width="646" height="1228"></figure>
+                <figure class="rounded"><img src="/assets/img/photos/crop-3.webp" loading="lazy"  alt="BI"></figure>
               </div>
               <!--/column -->
             </div>
@@ -165,19 +165,19 @@ include(__DIR__ . '/../shared/head.php');
           <div class="col-lg-7 order-lg-2">
             <div class="row gx-md-5 gy-5">
               <div class="col-md-4 offset-md-2 align-self-end hide-sm">
-                <figure class="rounded"><img src="/assets/img/photos/home1.webp" width="612" height="408"></figure>
+                <figure class="rounded"><img src="/assets/img/photos/home1.webp" loading="lazy" alt=""></figure>
               </div>
               <!--/column -->
               <div class="col-md-6 align-self-end hide-sm">
-                <figure class="rounded"><img src="/assets/img/photos/home2.webp" width="612" height="408"></figure>
+                <figure class="rounded"><img src="/assets/img/photos/home2.webp" loading="lazy" alt=""></figure>
               </div>
               <!--/column -->
               <div class="col-md-6 offset-md-1">
-                <figure class="rounded hide-sm"><img src="/assets/img/photos/home3.webp" width="612" height="408"></figure>
+                <figure class="rounded hide-sm"><img src="/assets/img/photos/home3.webp" loading="lazy" alt=""></figure>
               </div>
               <!--/column -->
               <div class="col-md-4 align-self-start">
-                <figure class="rounded"><img src="/assets/img/photos/home4.webp" width="612" height="408"></figure>
+                <figure class="rounded"><img src="/assets/img/photos/home4.webp" loading="lazy" alt=""></figure>
               </div>
               <!--/column -->
             </div>
