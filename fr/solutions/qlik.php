@@ -102,6 +102,19 @@ include(__DIR__ . '/../../shared/head.php');
     </section>
     <!-- /section -->
 
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">Lancez votre Qlik</p>
+            <h2 class="i91-cta-section-title">Envie de mettre Qlik au service de votre data ?</h2>
+            <a href="/fr/contact" class="i91-cta-section-btn">Discutons-en <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
   <!-- /.content-wrapper -->
   <?php

@@ -103,6 +103,19 @@ include(__DIR__ . '/../../shared/head.php');
       <!-- /.container -->
     </section>
 
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="i91-cta-section">
+          <div class="i91-cta-section-img"></div>
+          <div class="i91-cta-section-block">
+            <p class="i91-cta-section-eyebrow">Démarrez avec Power BI</p>
+            <h2 class="i91-cta-section-title">Prêt à exploiter Power BI dans votre PME ?</h2>
+            <a href="/fr/contact" class="i91-cta-section-btn">Discutons-en <i class="uil uil-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
   <!-- /.content-wrapper -->
   <?php
