@@ -237,15 +237,15 @@ include(__DIR__ . '/../../shared/head.php');
       <div class="container py-14 py-md-16">
         <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
           <div class="col-lg-6">
-            <h2 class="fs-16 text-uppercase text-muted mb-3">Cas concrets</h2>
-            <h3 class="display-5 mb-5">Pilotez votre entreprise avec un ERP pensé pour <span class="underline-3 style-2 yellow">votre réalité</span></h3>
-            <p class="lead fs-lg mb-5">Plus qu'un prestataire, nous sommes un partenaire de confiance pour bâtir des solutions <b>robustes</b> et <b>durables</b>. Insight 91 accompagne des structures variées dans leur transformation Odoo&nbsp;:</p>
+            <h2 class="fs-16 text-uppercase text-muted mb-3">Notre accompagnement</h2>
+            <h3 class="display-5 mb-5">Au-delà du déploiement, un partenaire pour <span class="underline-3 style-2 yellow">faire vivre votre Odoo</span></h3>
+            <p class="lead fs-lg mb-5">Plus qu'un prestataire, nous sommes un partenaire de confiance pour bâtir des solutions <b>robustes</b> et <b>durables</b>. Au-delà de l'implémentation initiale, nous proposons une palette complète de services pour accompagner votre Odoo dans la durée&nbsp;:</p>
             <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-              <li><span><i class="uil uil-check"></i></span><span><b>Boucherie</b> — caisse, stocks, traçabilité</span></li>
-              <li class="mt-3"><span><i class="uil uil-check"></i></span><span><b>Ferronnerie</b> — devis, suivi de production, facturation</span></li>
-              <li class="mt-3"><span><i class="uil uil-check"></i></span><span><b>Snacks &amp; restauration</b> — POS, gestion fournisseurs</span></li>
-              <li class="mt-3"><span><i class="uil uil-check"></i></span><span><b>Tables d'hôtes</b> — réservations, comptabilité</span></li>
-              <li class="mt-3"><span><i class="uil uil-check"></i></span><span><b>PME multi-secteurs</b> — solutions sur mesure</span></li>
+              <li><span><i class="uil uil-check"></i></span><span><b>Développements spécifiques</b> — modules sur mesure pour vos processus métier</span></li>
+              <li class="mt-3"><span><i class="uil uil-check"></i></span><span><b>Migration &amp; reprise de données</b> — passage depuis votre ancien outil, montée de version Odoo</span></li>
+              <li class="mt-3"><span><i class="uil uil-check"></i></span><span><b>Intégrations tierces</b> — banques, e-commerce, transporteurs, EDI, API métiers</span></li>
+              <li class="mt-3"><span><i class="uil uil-check"></i></span><span><b>Audit &amp; optimisation</b> — diagnostic et tuning d'une instance Odoo existante</span></li>
+              <li class="mt-3"><span><i class="uil uil-check"></i></span><span><b>Hébergement &amp; infogérance</b> — cloud managé, sauvegardes, monitoring, support continu</span></li>
             </ul>
           </div>
           <div class="col-lg-6">

@@ -346,136 +346,381 @@ include(__DIR__ . '/../shared/head.php');
           <h2 class="fs-16 text-uppercase text-muted mb-3 text-center">Nos partenaires</h2>
           <h3 class="display-4 mb-13 text-center">Les solutions qui font la différence</h3>
 
-          <div class="i91-zigzag">
-
-            <!-- Odoo -->
-            <article class="i91-zigzag-row">
-              <div class="i91-zigzag-visual i91-visual-odoo">
-                <span class="i91-zigzag-num">01</span>
-                <img src="/assets/img/brands/odoo_logo.svg" alt="Odoo" class="i91-zigzag-logo" />
-              </div>
-              <div class="i91-zigzag-body">
-                <span class="i91-zigzag-tag">Partenaire Officiel</span>
-                <h3 class="display-5 mb-4">Odoo</h3>
-                <p class="lead fs-lg mb-5">L'ERP open-source qui couvre toute votre PME. Une solution unique pour ventes, comptabilité, stocks, RH, e-commerce — modulaire, évolutive, sans lock-in.</p>
-                <ul class="icon-list bullet-bg bullet-soft-primary mb-5">
-                  <li><span><i class="uil uil-check"></i></span><span>Couvre 80% des besoins standards d'une PME</span></li>
-                  <li class="mt-2"><span><i class="uil uil-check"></i></span><span>Tarification partenaire et support direct éditeur</span></li>
-                  <li class="mt-2"><span><i class="uil uil-check"></i></span><span>Open-source : pas de lock-in propriétaire</span></li>
-                </ul>
-                <a href="/fr/solutions/odoo" class="btn btn-primary rounded-pill">Découvrir Odoo <i class="uil uil-arrow-right ms-1"></i></a>
-              </div>
-            </article>
-
-            <!-- Qlik Sense -->
-            <article class="i91-zigzag-row reverse">
-              <div class="i91-zigzag-visual i91-visual-qlik">
-                <span class="i91-zigzag-num">02</span>
-                <img src="/assets/img/brands/qlik.svg" alt="Qlik Sense" class="i91-zigzag-logo" />
-              </div>
-              <div class="i91-zigzag-body">
-                <span class="i91-zigzag-tag">Analytique augmentée</span>
-                <h3 class="display-5 mb-4">Qlik Sense</h3>
-                <p class="lead fs-lg mb-5">La plateforme analytique nouvelle génération. Visualisations interactives, IA intégrée, exploration libre des données — pour transformer vos décisions stratégiques.</p>
-                <ul class="icon-list bullet-bg bullet-soft-primary mb-5">
-                  <li><span><i class="uil uil-check"></i></span><span>Interaction dynamique et exploration libre</span></li>
-                  <li class="mt-2"><span><i class="uil uil-check"></i></span><span>IA et automatisation intelligente intégrées</span></li>
-                  <li class="mt-2"><span><i class="uil uil-check"></i></span><span>Solutions adaptables et scalables</span></li>
-                </ul>
-                <a href="/fr/solutions/qlik" class="btn btn-primary rounded-pill">Découvrir Qlik Sense <i class="uil uil-arrow-right ms-1"></i></a>
-              </div>
-            </article>
-
-            <!-- Power BI -->
-            <article class="i91-zigzag-row">
-              <div class="i91-zigzag-visual i91-visual-powerbi">
-                <span class="i91-zigzag-num">03</span>
-                <img src="/assets/img/brands/power-bi.svg" alt="Power BI" class="i91-zigzag-logo i91-zigzag-logo-pbi" />
-              </div>
-              <div class="i91-zigzag-body">
-                <span class="i91-zigzag-tag">Écosystème Microsoft</span>
-                <h3 class="display-5 mb-4">Power BI</h3>
-                <p class="lead fs-lg mb-5">L'outil BI de Microsoft qui s'intègre nativement à votre écosystème 365. Tableaux de bord interactifs, rapports collaboratifs, partage d'insights à grande échelle.</p>
-                <ul class="icon-list bullet-bg bullet-soft-primary mb-5">
-                  <li><span><i class="uil uil-check"></i></span><span>Intégration native à Microsoft 365</span></li>
-                  <li class="mt-2"><span><i class="uil uil-check"></i></span><span>Connecteurs vers des centaines de sources</span></li>
-                  <li class="mt-2"><span><i class="uil uil-check"></i></span><span>Adoption rapide pour utilisateurs Excel</span></li>
-                </ul>
-                <a href="/fr/solutions/powerbi" class="btn btn-primary rounded-pill">Découvrir Power BI <i class="uil uil-arrow-right ms-1"></i></a>
-              </div>
-            </article>
-
+          <?php
+            $partners = [
+              [
+                'id' => 'odoo',
+                'badge' => 'Partenaire officiel',
+                'logo' => '/assets/img/brands/odoo_logo.svg',
+                'logoAlt' => 'Odoo',
+                'title' => 'Odoo',
+                'subtitle' => 'ERP open-source · modulaire',
+                'lede' => "L'ERP open-source qui couvre toute votre PME. Une solution unique pour ventes, comptabilité, stocks, RH, e-commerce — modulaire, évolutive, sans lock-in.",
+                'stats' => [
+                  ['80%', 'des besoins PME'],
+                  ['20+', 'modules natifs'],
+                  ['0',   'lock-in'],
+                ],
+                'bullets' => [
+                  "Couvre 80% des besoins standards d'une PME",
+                  'Tarification partenaire et support direct éditeur',
+                  "Open-source : pas de lock-in propriétaire",
+                ],
+                'href' => '/fr/solutions/odoo',
+                'cta' => 'Découvrir Odoo',
+              ],
+              [
+                'id' => 'qlik',
+                'badge' => 'Analytique augmentée',
+                'logo' => '/assets/img/brands/qlik.svg',
+                'logoAlt' => 'Qlik Sense',
+                'title' => 'Qlik Sense',
+                'subtitle' => 'Analytique nouvelle génération',
+                'lede' => 'La plateforme analytique nouvelle génération. Visualisations interactives, IA intégrée, exploration libre des données — pour transformer vos décisions stratégiques.',
+                'stats' => [
+                  ['100%', 'interactif'],
+                  ['AI',   'intégrée'],
+                  ['∞',    'exploration libre'],
+                ],
+                'bullets' => [
+                  'Interaction dynamique et exploration libre',
+                  'IA et automatisation intelligente intégrées',
+                  'Solutions adaptables et scalables',
+                ],
+                'href' => '/fr/solutions/qlik',
+                'cta' => 'Découvrir Qlik Sense',
+              ],
+              [
+                'id' => 'powerbi',
+                'badge' => 'Écosystème Microsoft',
+                'logo' => '/assets/img/brands/power-bi.svg',
+                'logoAlt' => 'Power BI',
+                'title' => 'Power BI',
+                'subtitle' => 'BI Microsoft · Tableaux de bord',
+                'lede' => "L'outil BI de Microsoft qui s'intègre nativement à votre écosystème 365. Tableaux de bord interactifs, rapports collaboratifs, partage d'insights à grande échelle.",
+                'stats' => [
+                  ['365', 'intégration native'],
+                  ['500+', 'connecteurs'],
+                  ['Excel', 'adoption rapide'],
+                ],
+                'bullets' => [
+                  'Intégration native à Microsoft 365',
+                  'Connecteurs vers des centaines de sources',
+                  'Adoption rapide pour utilisateurs Excel',
+                ],
+                'href' => '/fr/solutions/powerbi',
+                'cta' => 'Découvrir Power BI',
+              ],
+            ];
+            $total = count($partners);
+          ?>
+          <div class="partner-cards">
+            <?php foreach ($partners as $i => $p): ?>
+              <article class="partner-card partner-card--<?php echo $p['id']; ?>" aria-labelledby="pc-<?php echo $p['id']; ?>-title">
+                <div class="partner-card__brand">
+                  <svg class="partner-card__rings" viewBox="0 0 100 100" aria-hidden="true">
+                    <circle cx="50" cy="50" r="48"></circle>
+                    <circle cx="50" cy="50" r="36"></circle>
+                    <circle cx="50" cy="50" r="24"></circle>
+                  </svg>
+                  <div class="partner-card__brand-top">
+                    <span class="partner-card__badge">
+                      <span class="partner-card__badge-dot" aria-hidden="true"></span>
+                      <?php echo $p['badge']; ?>
+                    </span>
+                    <span class="partner-card__index"><?php echo str_pad($i + 1, 2, '0', STR_PAD_LEFT); ?> / <?php echo str_pad($total, 2, '0', STR_PAD_LEFT); ?></span>
+                  </div>
+                  <div class="partner-card__logo">
+                    <img src="<?php echo $p['logo']; ?>" alt="<?php echo $p['logoAlt']; ?>" loading="lazy" />
+                  </div>
+                  <dl class="partner-card__stats">
+                    <?php foreach ($p['stats'] as $s): ?>
+                      <div class="partner-card__stat">
+                        <dt class="partner-card__stat-value"><?php echo $s[0]; ?></dt>
+                        <dd class="partner-card__stat-label"><?php echo $s[1]; ?></dd>
+                      </div>
+                    <?php endforeach; ?>
+                  </dl>
+                </div>
+                <div class="partner-card__body">
+                  <h3 id="pc-<?php echo $p['id']; ?>-title" class="partner-card__title"><?php echo $p['title']; ?></h3>
+                  <div class="partner-card__subtitle"><?php echo $p['subtitle']; ?></div>
+                  <p class="partner-card__lede"><?php echo $p['lede']; ?></p>
+                  <ul class="partner-card__list">
+                    <?php foreach ($p['bullets'] as $b): ?>
+                      <li>
+                        <span class="partner-card__tick" aria-hidden="true">
+                          <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5 L8.2 14.5 L16 6.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <?php echo $b; ?>
+                      </li>
+                    <?php endforeach; ?>
+                  </ul>
+                  <div class="partner-card__actions">
+                    <a href="<?php echo $p['href']; ?>" class="pc-btn pc-btn--primary">
+                      <?php echo $p['cta']; ?>
+                      <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10 H15 M11 6 L15 10 L11 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="/fr/contact" class="pc-btn pc-btn--ghost">Parler à un expert</a>
+                  </div>
+                </div>
+              </article>
+            <?php endforeach; ?>
           </div>
         </div>
       </section>
 
       <style>
-        .i91-zigzag { display: flex; flex-direction: column; gap: 5rem; }
-        .i91-zigzag-row {
+        /* Brand-forward partner card — left panel branded, right panel content */
+        .partner-cards { display: flex; flex-direction: column; gap: 3rem; }
+        .partner-card {
+          --pc-ink: #0f1a2e;
+          --pc-ink-2: #3b455a;
+          --pc-muted: #7b8597;
+          --pc-line: #d8dde6;
           display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 4rem;
-          align-items: center;
-        }
-        .i91-zigzag-row.reverse > .i91-zigzag-visual { order: 2; }
-        .i91-zigzag-visual {
-          position: relative;
-          aspect-ratio: 4 / 3;
-          border-radius: 22px;
+          grid-template-columns: 1.1fr 1fr;
+          background: #fff;
+          border-radius: 20px;
           overflow: hidden;
-          background-color: #fff;
-          background-size: cover;
-          background-position: center;
-          box-shadow: 0 30px 60px -20px rgba(15,18,24,.18);
-          display: flex; align-items: center; justify-content: center;
+          border: 1px solid rgba(15,26,46,.08);
+          box-shadow: 0 1px 0 rgba(15,26,46,.04), 0 30px 60px -40px rgba(15,26,46,.18);
+          color: var(--pc-ink);
         }
-        .i91-zigzag-visual.i91-visual-odoo {
-          background: linear-gradient(135deg, #f5f0fa 0%, #ede4f5 100%);
+        /* Per-brand palette */
+        .partner-card--odoo {
+          --pc-brand: #714B67;
+          --pc-brand-bright: #8e6481;
+          --pc-brand-deep: #4a2f41;
+          --pc-brand-soft: #f3edf1;
         }
-        .i91-zigzag-visual.i91-visual-qlik {
-          background: linear-gradient(135deg, #e8f7ee 0%, #c4ebd2 100%);
+        .partner-card--qlik {
+          --pc-brand: #1A8754;
+          --pc-brand-bright: #2BBE4E;
+          --pc-brand-deep: #0e4b2d;
+          --pc-brand-soft: #e6f5ee;
         }
-        .i91-zigzag-visual.i91-visual-powerbi {
-          background: linear-gradient(135deg, #fff8e1 0%, #fde9a8 100%);
+        .partner-card--powerbi {
+          /* Palette amber/brown : assez foncée pour que les jaunes natifs du
+             logo (paint0/1/2_linear : #F9E589 → #C87E0E) ressortent, tout en
+             gardant un fond chaud "Power BI" lisible avec du texte blanc. */
+          --pc-brand: #A86E0A;
+          --pc-brand-bright: #F2C811;
+          --pc-brand-deep: #2E1A03;
+          --pc-brand-soft: #fff3cc;
         }
-        .i91-zigzag-logo { max-width: 60%; max-height: 50%; }
-        .i91-zigzag-logo-pbi { max-width: 32%; max-height: 65%; }
-        .i91-zigzag-num {
+        /* Logo Power BI : on garde les couleurs natives du SVG (pas de filter) */
+        .partner-card--powerbi .partner-card__logo img {
+          filter: none;
+          opacity: 1;
+        }
+
+        /* Alternance : cartes paires inversées (panneau brand à droite) */
+        .partner-cards > .partner-card:nth-child(even) .partner-card__brand { order: 2; }
+        .partner-cards > .partner-card:nth-child(even) .partner-card__body  { order: 1; }
+
+        /* Left panel */
+        .partner-card__brand {
+          position: relative;
+          padding: 40px;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 32px;
+          background: radial-gradient(120% 90% at 100% 0%, var(--pc-brand-bright) 0%, var(--pc-brand) 45%, var(--pc-brand-deep) 100%);
+          overflow: hidden;
+        }
+        .partner-card__rings {
           position: absolute;
-          top: 1.5rem; left: 1.5rem;
-          font-size: 2rem;
-          font-weight: 800;
-          letter-spacing: .05em;
-          color: rgba(15,18,24,.18);
-          background: rgba(255,255,255,.85);
-          padding: .25rem .75rem;
-          border-radius: 10px;
-          backdrop-filter: blur(4px);
+          top: -120px; right: -120px;
+          width: 420px; height: 420px;
+          opacity: .18;
+          pointer-events: none;
         }
-        .i91-zigzag-row:not(.reverse) .i91-zigzag-num { /* over photo: lighter bg */ }
-        .i91-zigzag-body { padding: 1rem 0; }
-        .i91-zigzag-tag {
-          display: inline-block;
-          padding: .4rem .9rem;
-          background: rgba(var(--bs-primary-rgb), .1);
-          color: #073a55;
-          font-size: .8rem;
-          font-weight: 600;
+        .partner-card__rings circle { fill: none; stroke: #fff; stroke-width: .4; }
+        .partner-card__brand-top,
+        .partner-card__logo,
+        .partner-card__stats { position: relative; }
+        .partner-card__brand-top {
+          display: flex; justify-content: space-between; align-items: center;
+        }
+        .partner-card__badge {
+          display: inline-flex; align-items: center; gap: 8px;
+          padding: 6px 12px 6px 8px;
+          background: rgba(255,255,255,.12);
+          border: 1px solid rgba(255,255,255,.22);
           border-radius: 999px;
-          letter-spacing: .03em;
-          margin-bottom: 1.25rem;
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: .14em;
           text-transform: uppercase;
+          color: #fff;
         }
-        .i91-zigzag-body p.lead { color: #4d5862; font-size: 1.05rem; line-height: 1.6; }
-        @media (max-width: 991px) {
-          .i91-zigzag { gap: 3.5rem; }
-          .i91-zigzag-row, .i91-zigzag-row.reverse {
-            grid-template-columns: 1fr;
-            gap: 1.75rem;
+        .partner-card__badge-dot {
+          width: 6px; height: 6px;
+          border-radius: 999px;
+          background: #a8e6c6;
+          box-shadow: 0 0 8px #a8e6c6;
+        }
+        .partner-card__index {
+          font-family: 'JetBrains Mono', ui-monospace, monospace;
+          font-size: 12px;
+          opacity: .7;
+          letter-spacing: .12em;
+          color: #fff;
+        }
+        .partner-card__logo {
+          display: flex; align-items: center; justify-content: center;
+          min-height: 140px;
+        }
+        .partner-card__logo img {
+          width: 320px; max-width: 80%; height: auto;
+          filter: brightness(0) invert(1);
+          opacity: .97;
+        }
+        .partner-card__stats {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .partner-card__stat { padding-right: 16px; }
+        .partner-card__stat + .partner-card__stat {
+          padding-left: 16px;
+          border-left: 1px solid rgba(255,255,255,.22);
+        }
+        .partner-card__stat-value {
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 1;
+          letter-spacing: -.02em;
+          color: #fff;
+        }
+        .partner-card__stat-label {
+          margin: 6px 0 0;
+          font-size: 11px;
+          opacity: .75;
+          letter-spacing: .04em;
+          color: #fff;
+        }
+
+        /* Right panel */
+        .partner-card__body {
+          padding: 44px 44px 36px;
+          display: flex;
+          flex-direction: column;
+        }
+        .partner-card__title {
+          margin: 0;
+          font-size: 44px;
+          font-weight: 700;
+          letter-spacing: -.025em;
+          line-height: 1;
+          color: var(--pc-ink);
+        }
+        .partner-card__subtitle {
+          margin-top: 6px;
+          font-size: 13px;
+          color: var(--pc-muted);
+          letter-spacing: .02em;
+        }
+        .partner-card__lede {
+          margin: 24px 0 0;
+          font-size: 16px;
+          line-height: 1.55;
+          color: var(--pc-ink-2);
+        }
+        .partner-card__list {
+          margin: 28px 0 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .partner-card__list li {
+          display: flex; align-items: center; gap: 12px;
+          font-size: 14px;
+          color: var(--pc-ink);
+        }
+        .partner-card__tick {
+          flex-shrink: 0;
+          width: 22px; height: 22px;
+          border-radius: 999px;
+          background: var(--pc-brand-soft);
+          color: var(--pc-brand);
+          display: inline-flex; align-items: center; justify-content: center;
+        }
+        .partner-card__actions {
+          margin-top: auto;
+          padding-top: 28px;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .pc-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 14px 22px;
+          border-radius: 999px;
+          font-size: 14px;
+          font-weight: 600;
+          text-decoration: none;
+          border: 1px solid transparent;
+          cursor: pointer;
+          transition: transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
+        }
+        .pc-btn:hover { transform: translateY(-1px); }
+        .pc-btn--primary {
+          background: var(--pc-brand);
+          color: #fff;
+        }
+        .pc-btn--primary:hover { background: var(--pc-brand-deep); color: #fff; }
+        .pc-btn--ghost {
+          background: transparent;
+          color: var(--pc-ink);
+          border-color: var(--pc-line);
+          font-weight: 500;
+          padding: 14px 18px;
+        }
+        .pc-btn--ghost:hover { border-color: var(--pc-ink); color: var(--pc-ink); }
+
+        /* Responsive */
+        @media (max-width: 880px) {
+          .partner-card { grid-template-columns: 1fr; border-radius: 16px; }
+          .partner-card__brand { padding: 32px; gap: 24px; }
+          .partner-card__logo img { width: 240px; }
+          .partner-card__body { padding: 32px; }
+          .partner-card__title { font-size: 36px; }
+          .partner-card__stat-value { font-size: 24px; }
+        }
+        @media (max-width: 480px) {
+          .partner-card__stats { grid-template-columns: 1fr 1fr; gap: 16px 0; }
+          .partner-card__stat:nth-child(3) {
+            grid-column: 1 / -1;
+            padding-left: 0;
+            border-left: none;
+            border-top: 1px solid rgba(255,255,255,.22);
+            padding-top: 16px;
+            margin-top: 4px;
           }
-          .i91-zigzag-row.reverse > .i91-zigzag-visual { order: 0; }
+          .partner-cards { gap: 2rem; }
         }
       </style>
+
+      <!-- CTA FINAL -->
+      <section class="wrapper bg-light">
+        <div class="container py-14 py-md-16">
+          <div class="i91-cta-section">
+            <div class="i91-cta-section-img"></div>
+            <div class="i91-cta-section-block">
+              <p class="i91-cta-section-eyebrow">Prêt à passer à l'action ?</p>
+              <h2 class="i91-cta-section-title">Un projet data ou ERP ? Parlons-en.</h2>
+              <a href="/fr/contact" class="i91-cta-section-btn">Planifier un rendez-vous <i class="uil uil-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
   </div>
 
   <?php

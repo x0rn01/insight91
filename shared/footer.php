@@ -42,7 +42,7 @@ $year = date('Y');
             <div class="col-md-12 col-lg-3">
                 <div class="widget">
                     <h4 class="widget-title text-white mb-3"><?php echo $T('Nous joindre', 'Contact us'); ?></h4>
-                    <address class="mb-3">Rue Devant l’Abbaye, 36<br />4042 Liers, Belgique</address>
+                    <address class="mb-3">Devant L’Abbeye 36<br />4042 Herstal, Belgique</address>
                     <p class="mb-1"><a href="mailto:info@insight91.be">info@insight91.be</a></p>
                     <p class="mb-3"><a href="tel:+32498659711">0498/65.97.11</a></p>
                     <a href="/<?php echo $L; ?>/contact" class="btn btn-sm btn-primary rounded-pill">Contact</a>

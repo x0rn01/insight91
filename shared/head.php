@@ -54,9 +54,9 @@ $pageUrl = $baseUrl . '/' . $lang . '/' . $pagePath;
       "telephone": "+32498659711",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Rue Devant l’Abbaye, 36",
+        "streetAddress": "Devant L’Abbeye 36",
         "postalCode": "4042",
-        "addressLocality": "Liers",
+        "addressLocality": "Herstal",
         "addressCountry": "BE"
       }
     }

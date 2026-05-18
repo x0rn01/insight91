@@ -148,7 +148,7 @@ include(__DIR__ . '/../shared/head.php');
             <h2 class="display-5 mb-7">Coordonnées</h2>
             <div class="d-flex flex-row mb-5">
               <div><div class="icon text-primary fs-28 me-4"><i class="uil uil-location-pin-alt"></i></div></div>
-              <div><h5 class="mb-1">Adresse</h5><address>Rue Devant l’Abbaye, 36<br />4042 Liers</address></div>
+              <div><h5 class="mb-1">Adresse</h5><address>Devant L’Abbeye 36<br />4042 Herstal</address></div>
             </div>
             <div class="d-flex flex-row mb-5">
               <div><div class="icon text-primary fs-28 me-4"><i class="uil uil-phone-volume"></i></div></div>

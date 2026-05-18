@@ -107,7 +107,7 @@ include(__DIR__ . '/../shared/head.php');
 
           <div class="col-lg-5">
             <h2 class="display-5 mb-7">Contact details</h2>
-            <div class="d-flex flex-row mb-5"><div><div class="icon text-primary fs-28 me-4"><i class="uil uil-location-pin-alt"></i></div></div><div><h5 class="mb-1">Address</h5><address>Rue Devant l’Abbaye, 36<br />4042 Liers, Belgium</address></div></div>
+            <div class="d-flex flex-row mb-5"><div><div class="icon text-primary fs-28 me-4"><i class="uil uil-location-pin-alt"></i></div></div><div><h5 class="mb-1">Address</h5><address>Devant L’Abbeye 36<br />4042 Herstal, Belgium</address></div></div>
             <div class="d-flex flex-row mb-5"><div><div class="icon text-primary fs-28 me-4"><i class="uil uil-phone-volume"></i></div></div><div><h5 class="mb-1">Phone</h5><p>+32 498 65 97 11</p></div></div>
             <div class="d-flex flex-row mb-5"><div><div class="icon text-primary fs-28 me-4"><i class="uil uil-envelope"></i></div></div><div><h5 class="mb-1">E-mail</h5><p><a href="mailto:info@insight91.be" class="link-body">info@insight91.be</a></p></div></div>
           </div>

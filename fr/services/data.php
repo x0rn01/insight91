@@ -201,7 +201,180 @@ include(__DIR__ . '/../../shared/head.php');
         .i91-client { height: 48px; }
         .i91-client-tall img { max-height: 64px; max-width: 48px; }
       }
+
+      /* Logos partenaires dans la card overlay : sans cette contrainte, la
+         règle globale `figure { display: inline-block }` laisse l'image s'afficher
+         à sa taille naturelle (280×280) au lieu de remplir sa colonne Bootstrap.
+         Le .container des logos est SŒUR de .post-content (pas enfant), donc on
+         cible directement .card-body > .container. */
+      .projects-overflow .card-body > .container figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 72px;
+      }
+      .projects-overflow .card-body > .container figure img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
+
+      /* Restaure les règles projects-overflow purgées du style.css minifié.
+         Le pattern dépend de .project-details en position:absolute (>=992px) +
+         d'une max-width pour que la carte flotte correctement sur la photo.
+         Note : .item DOIT avoir position:relative pour que `left/right/top`
+         de .project-details soient relatifs à l'item et non au viewport. */
+      .projects-overflow .project-details { width: 100%; }
+      .projects-overflow .item { position: relative; }
+      @media (min-width: 1200px) {
+        .projects-overflow .project-details { max-width: 30rem; }
+      }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .projects-overflow .project-details { max-width: 20rem; }
+      }
+      @media (min-width: 992px) {
+        .projects-overflow .project-details { position: absolute; }
+        .projects-overflow .item { margin-top: 10rem; }
+      }
+      @media (max-width: 991.98px) {
+        .projects-overflow .project {
+          box-shadow: 0 0 1.25rem rgba(30,34,40,.04) !important;
+          border-radius: .4rem !important;
+        }
+        .projects-overflow .project figure img {
+          border-bottom-left-radius: 0 !important;
+          border-bottom-right-radius: 0 !important;
+        }
+        .projects-overflow .project-details .card {
+          border-top-left-radius: 0 !important;
+          border-top-right-radius: 0 !important;
+          box-shadow: none !important;
+        }
+      }
     </style>
+
+    <!-- SECTEURS — pattern projects-overflow (image grande + carte décalée) -->
+    <section class="wrapper bg-light">
+      <div class="container pt-9 pt-md-11 pb-14 pb-md-16">
+        <div class="projects-overflow mt-md-10 mb-10 mb-lg-15">
+
+          <!-- PME -->
+          <div class="project item">
+            <div class="row">
+              <figure class="col-lg-8 col-xl-7 rounded"><img src="/assets/img/photos/smb.jpg" alt="" /></figure>
+              <div class="project-details d-flex justify-content-center flex-column" style="right: 0; top: 5%;">
+                <div class="card shadow rellax" data-rellax-xs-speed="0" data-rellax-mobile-speed="0">
+                  <div class="card-body">
+                    <div class="post-header">
+                      <div class="post-category text-line text-purple mb-3">Petites et moyennes entreprises</div>
+                      <h2 class="post-title mb-3">Identifiez vos meilleurs clients</h2>
+                    </div>
+                    <div class="post-content">
+                      <p>Si vous souhaitez connaître les produits qui génèrent les meilleures marges et obtenir des insights sur la rentabilité globale. Analysez les dépenses, gérez les carnets de commandes et maintenez la santé financière de votre entreprise avec précision.</p>
+                      <p>Naviguez avec clarté dans le paysage financier de votre entreprise et prenez des décisions éclairées qui amélioreront votre efficacité opérationnelle et votre rentabilité.</p>
+                    </div>
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-6"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/odoo-vector-logo-small.png" alt="Odoo" /></figure></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Industrie -->
+          <div class="project item">
+            <div class="row">
+              <figure class="col-lg-8 col-xl-7 ms-lg-auto rounded"><img src="/assets/img/photos/industry.jpg" alt="" /></figure>
+              <div class="project-details d-flex justify-content-center flex-column" style="left: 0; top: 5%;">
+                <div class="card shadow rellax" data-rellax-xs-speed="0" data-rellax-mobile-speed="0">
+                  <div class="card-body">
+                    <div class="post-header">
+                      <div class="post-category text-line text-leaf mb-3">Industrie</div>
+                      <h2 class="post-title mb-3">Maximisez le potentiel de votre entreprise</h2>
+                    </div>
+                    <div class="post-content">
+                      <p>Plongez dans l'analyse des ventes, l'évaluation du portefeuille de clients, les achats, la gestion des stocks et les insights financiers.</p>
+                      <p>Nos solutions de Business Intelligence transforment les données complexes issues de vos systèmes d'entreprise en insights actionnables, vous permettant d'optimiser vos opérations et de renforcer votre rentabilité.</p>
+                    </div>
+                    <div class="container">
+                      <div class="row gy-3">
+                        <div class="col-6"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/odoo-vector-logo-small.png" alt="Odoo" /></figure></div>
+                        <div class="col-6"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/sap-vector-logo-small.png" alt="SAP" /></figure></div>
+                        <div class="col-6"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/salesforce-vector-logo-small.png" alt="Salesforce" /></figure></div>
+                        <div class="col-6"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/dynamics-vector-logo-small.webp" alt="Dynamics" /></figure></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Finance -->
+          <div class="project item">
+            <div class="row">
+              <figure class="col-lg-8 col-xl-7 rounded"><img src="/assets/img/photos/finance.jpg" alt="Finance" /></figure>
+              <div class="project-details d-flex justify-content-center flex-column" style="right: 0; top: 5%;">
+                <div class="card shadow rellax" data-rellax-xs-speed="0" data-rellax-mobile-speed="0">
+                  <div class="card-body">
+                    <div class="post-header">
+                      <div class="post-category text-line text-violet mb-3">Finance</div>
+                      <h2 class="post-title mb-3">Renforcement de la gestion financière</h2>
+                    </div>
+                    <div class="post-content">
+                      <p>Nous offrons des solutions innovantes pour les bureaux de gestion de patrimoine et les cabinets comptables, permettant la gestion aisée des finances des clients, l'analyse des revenus, des dépenses, la prévision et la budgétisation.</p>
+                      <p>Notre service comprend la fourniture de rapports automatisés aux clients, garantissant qu'ils disposent d'insights financiers précis et opportuns à portée de main.</p>
+                    </div>
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-md-4"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/bob-vector-logo-small.webp" alt="Bob" /></figure></div>
+                        <div class="col-md-4"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/horus-vector-logo-small.webp" alt="Horus" /></figure></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-Commerce -->
+          <div class="project item">
+            <div class="row">
+              <figure class="col-lg-8 col-xl-7 ms-lg-auto rounded"><img src="/assets/img/photos/ecommerce.jpg" alt="" /></figure>
+              <div class="project-details d-flex justify-content-center flex-column" style="left: 0; top: 5%;">
+                <div class="card shadow rellax" data-rellax-xs-speed="0" data-rellax-mobile-speed="0">
+                  <div class="card-body">
+                    <div class="post-header">
+                      <div class="post-category text-line text-yellow mb-3">E-Commerce</div>
+                      <h2 class="post-title mb-3">Solutions d'analitiques sur-mesure</h2>
+                    </div>
+                    <div class="post-content">
+                      <p>Nous proposons des solutions clé en main et des services de développement sur mesure pour exploiter les logiciels de e-commerce afin d'améliorer la performance web et la gestion financière.</p>
+                      <p>Nos services sont conçus pour optimiser les opérations de votre entreprise en ligne et l'efficacité financière grâce à des analyses avancées et une intégration logicielle adaptée à vos besoins.</p>
+                    </div>
+                    <div class="container">
+                      <div class="row gy-3">
+                        <div class="col-6"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/google-vector-logo-small.webp" alt="Google Analytics" /></figure></div>
+                        <div class="col-6"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/prestashop-vector-logo-small.webp" alt="Prestashop" /></figure></div>
+                        <div class="col-6"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/paypal-vector-logo-small.webp" alt="Paypal" /></figure></div>
+                        <div class="col-6"><figure class="px-3 px-md-0 px-xxl-2"><img src="/assets/img/brands/zencart-vector-logo-small.webp" alt="ZenCart" /></figure></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <section class="wrapper bg-light">
       <div class="container py-14 py-md-16">
