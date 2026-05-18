@@ -515,9 +515,13 @@ include(__DIR__ . '/../shared/head.php');
           opacity: 1;
         }
 
-        /* Alternance : cartes paires inversées (panneau brand à droite) */
-        .partner-cards > .partner-card:nth-child(even) .partner-card__brand { order: 2; }
-        .partner-cards > .partner-card:nth-child(even) .partner-card__body  { order: 1; }
+        /* Alternance : cartes paires inversées (panneau brand à droite).
+           Scopé au layout 2-colonnes — en stack mobile, le panneau brand
+           passe toujours en premier (image avant texte). */
+        @media (min-width: 881px) {
+          .partner-cards > .partner-card:nth-child(even) .partner-card__brand { order: 2; }
+          .partner-cards > .partner-card:nth-child(even) .partner-card__body  { order: 1; }
+        }
 
         /* Left panel */
         .partner-card__brand {
@@ -693,6 +697,9 @@ include(__DIR__ . '/../shared/head.php');
           .partner-card__body { padding: 32px; }
           .partner-card__title { font-size: 36px; }
           .partner-card__stat-value { font-size: 24px; }
+          /* Boutons full-width empilés en mobile */
+          .partner-card__actions { flex-direction: column; gap: 10px; }
+          .pc-btn { width: 100%; justify-content: center; padding: 14px 22px; }
         }
         @media (max-width: 480px) {
           .partner-card__stats { grid-template-columns: 1fr 1fr; gap: 16px 0; }
