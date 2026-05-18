@@ -45,12 +45,13 @@ git commit -m "..."
 git push origin main
 
 # 2. Upload des fichiers modifiés sur OVH via curl
+#    ⚠️ Le web root est /www/ — TOUJOURS préfixer les chemins distants par /www/
 set -a; source .env; set +a
 BASE="ftp://${FTP_USER}:${FTP_PASS}@${FTP_HOST}:${FTP_PORT}"
 
-curl -sS -T fr/index.php       "$BASE/fr/index.php"
-curl -sS -T en/index.php       "$BASE/en/index.php"
-curl -sS -T assets/img/foo.webp "$BASE/assets/img/foo.webp"
+curl -sS -T fr/index.php       "$BASE/www/fr/index.php"
+curl -sS -T en/index.php       "$BASE/www/en/index.php"
+curl -sS -T assets/img/foo.webp "$BASE/www/assets/img/foo.webp"
 ```
 
 Un code de retour HTTP `226` indique un transfert FTP complet (succès).
@@ -60,11 +61,14 @@ Ajouter `-w "%{http_code}\n"` à la commande `curl` pour l'afficher.
 
 - **N'uploader que les fichiers modifiés** (`git diff --name-only origin/main`
   donne la liste). Pas de mirroring complet — c'est lent et inutile.
-- **Créer les répertoires manquants** : ajouter `--ftp-create-dirs` à `curl` si
-  on uploade un fichier dans un nouveau dossier.
+- **Toujours préfixer le chemin distant par `/www/`** — la racine FTP contient
+  aussi d'anciens dossiers `fr/`, `shared/`, etc. qui ne sont PAS servis.
+  Uploader sans le préfixe `/www/` envoie les fichiers dans une zone morte.
+- **Créer les répertoires manquants** : ajouter `--ftp-create-dirs` à `curl`
+  uniquement pour de NOUVEAUX dossiers sous `/www/`. Ne JAMAIS l'utiliser si
+  un 550 survient sur un dossier qu'on s'attend à trouver — c'est probablement
+  un problème de préfixe `/www/` manquant, pas un dossier absent.
 - **Ne jamais commiter `.env`** — il contient le mot de passe FTP en clair.
-- L'index FTP du serveur reflète directement la racine web (pas de dossier
-  `public_html` ou `www` intermédiaire).
 
 ### Script utilitaire (optionnel)
 
@@ -75,7 +79,7 @@ set -a; source .env; set +a
 BASE="ftp://${FTP_USER}:${FTP_PASS}@${FTP_HOST}:${FTP_PORT}"
 
 git diff --name-only HEAD~1 HEAD | while read f; do
-  [ -f "$f" ] && curl -sS --ftp-create-dirs -T "$f" "$BASE/$f" \
+  [ -f "$f" ] && curl -sS -T "$f" "$BASE/www/$f" \
     -w "$f: %{http_code}\n"
 done
 ```
