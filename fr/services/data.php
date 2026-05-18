@@ -240,6 +240,10 @@ include(__DIR__ . '/../../shared/head.php');
         .projects-overflow .item { margin-top: 10rem; }
       }
       @media (max-width: 991.98px) {
+        /* Espace entre la section "Cas concrets" et la première image du
+           bloc projects-overflow (sinon les deux sections se collent en
+           mobile car .item margin-top: 10rem n'est appliqué qu'à ≥992px). */
+        .projects-overflow { margin-top: 2.5rem; }
         .projects-overflow .project {
           box-shadow: 0 0 1.25rem rgba(30,34,40,.04) !important;
           border-radius: .4rem !important;
